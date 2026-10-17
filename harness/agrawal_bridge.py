@@ -71,13 +71,19 @@ def _install_stand_ins():
     backoff.expo = lambda *a, **k: None
 
     def on_exception(wait_gen=None, exception=Exception, max_value=None, max_tries=None, **_kw):
+        declared = exception if isinstance(exception, tuple) else (exception,)
+        # a reply with no JSON object at all raises ValueError inside the vendored extract_json;
+        # treat it like invalid JSON. Connection failures (RuntimeError from rops.llm) still
+        # propagate, so a dead server fails the market loudly instead of faking parse failures.
+        caught = declared + (ValueError, KeyError, TypeError, AttributeError)
+
         def decorate(fn):
             @functools.wraps(fn)
             def wrapper(*args, **kwargs):
                 for _ in range(MAX_JSON_TRIES):
                     try:
                         return fn(*args, **kwargs)
-                    except exception:
+                    except caught:
                         continue
                 PARSE_FAILURES["count"] += 1
                 return {}  # no ask change this hour; counted in result.json, never invented
@@ -140,6 +146,22 @@ def _normalised_seller_response(self, **kwargs):
 
 
 LMSeller.generate_bid_response = _normalised_seller_response
+
+_original_overseer = MessageOverseer.run_overseer_prompt
+OVERSEER_FAILURES = {"count": 0}
+
+
+def _tolerant_overseer(self, round_num, seller_messages_this_round):
+    """The in-market overseer (C6) parses its reply with the same extract_json; an unparseable
+    reply means no penalty that hour and is counted, instead of ending the market."""
+    try:
+        return _original_overseer(self, round_num, seller_messages_this_round) or {}
+    except (ValueError, KeyError, TypeError, AssertionError):
+        OVERSEER_FAILURES["count"] += 1
+        return {}
+
+
+MessageOverseer.run_overseer_prompt = _tolerant_overseer
 
 _original_render = agents_mod.render_prompt
 
@@ -206,6 +228,7 @@ def run_market(*, run_id, seed, seller_models, rounds, channel, oversight, plant
         "seller_models": seller_model_by_id,
         "rounds": [r.model_dump() for r in market.rounds],
         "parse_failures": PARSE_FAILURES["count"],
+        "overseer_failures": OVERSEER_FAILURES["count"],
     }
 
 

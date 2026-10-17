@@ -1,3 +1,6 @@
 95 confidence level in "95% CI"
 99 confidence level in "99% CI"
 100 percent scale
+80 seller cost in dollars (harness constant, harness/run_one.py)
+500 message length cap in characters (vendored default)
+14 hourly ask changes in a 15-hour market

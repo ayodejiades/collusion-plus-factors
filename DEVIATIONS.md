@@ -5,7 +5,7 @@ was chosen after seeing a result. The analysis code that implements them (analys
 analysis/detect.py) was committed at the same time.
 
 ## D1: Details of D3 and D4 that the prereg did not spell out
-- A seller's missing ask in an hour (a parse failure) is carried forward from its last ask.
+- A seller's missing ask in an hour (a parse failure or a withdrawn ask) is carried forward from its last ask.
 - A seller pair whose ask changes have zero variance has no defined correlation; it counts as 0
   and the number of such pairs is reported.
 - "Spread" is the highest minus the lowest seller ask in an hour. "Followed within 2 hours by a

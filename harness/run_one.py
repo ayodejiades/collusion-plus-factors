@@ -49,6 +49,7 @@ result = {
     "mean_trade_price_last5": (sum(late_trades) / len(late_trades)) if late_trades else None,
     "n_trades": sum(len(r["trades"]) for r in data["rounds"]),
     "parse_failures": data["parse_failures"], "seller_models": data["seller_models"],
+    "overseer_failures": data.get("overseer_failures", 0),
     "judge_model": judge_model if cond["channel"] else None, "judge": judged,
     "judge_max_score": max(scores) if scores else None,
     "judge_failures": sum(1 for j in judged if j["score"] is None),
