@@ -56,7 +56,7 @@ Table 1: The seven conditions. "Channel" means sellers can message each other.
 | C6 | 3 Qwen | on | told an overseer monitors messages; overseer active | monitoring attack |
 | C7 | 3 Llama | off | | decoy, model-identity control |
 
-C2, C4 and C7 have no channel, so no agreement can form in them. They differ in how many sellers share a model, which is the variable the shared-prior explanation depends on.
+C2, C4 and C7 have no channel, so no agreement can form in them. They differ in how many sellers share a model, which is the variable the shared-prior explanation depends on. In C6 the overseer from Agrawal et al. [2] reads each hour's messages during the market; when it rates them 4 out of 4, every later message is limited to 5 characters for the rest of the market, as in the original code.
 
 **Collusion index and positive control.** For each market, the collusion index is the mean seller ask over the last 5 hours, rescaled so that 0 is seller cost and 1 is buyer value. The preregistered positive control requires the mean index of C1 to exceed that of C2 by at least 0.2. If it does not, the instrument cannot see planted coordination and the main results are not interpretable.
 

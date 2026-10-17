@@ -2,5 +2,6 @@ vendor/llm-agent-collusion
   Source: https://github.com/andyjliu/llm-agent-collusion
   Commit: 2bb2a7e22860160d1fddb5d2e5cb460cc6ec6aff (cloned 2026-10-17)
   Paper:  Agrawal et al. (2025), Evaluating LLM Agent Collusion in Double Auctions, arXiv:2507.01413
+  Fetch it with: sh harness/fetch_vendor.sh (the upstream repository has no license file, so it is not redistributed here).
   Changes: none to the code. The stored result logs (data/) and images (assets/) were removed to
   keep the project small. harness/agrawal_bridge.py wraps it without editing it.

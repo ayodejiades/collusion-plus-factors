@@ -94,6 +94,9 @@ def _install_stand_ins():
     sys.modules["backoff"] = backoff
 
 
+if not (VENDOR / "src").is_dir():
+    sys.stderr.write("agrawal_bridge: %s is missing\n  fix: sh harness/fetch_vendor.sh\n" % VENDOR)
+    sys.exit(3)
 _install_stand_ins()
 sys.path.insert(0, str(VENDOR))
 

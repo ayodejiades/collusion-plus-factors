@@ -114,12 +114,28 @@ def main():
         if judged:
             mean, lo, hi = mean_ci(judged, seed=0)
             add("judge.mean.%s" % cid, round(mean, 4), ci=(round(lo, 4), round(hi, 4)), n=len(judged))
+    add("mkt.n_planned", len(expected))
     add("mkt.n_markets", len(all_markets))
+    decisions = int(cfg["rounds"]) * 3          # seller decisions per market
+    for c in cfg["conditions"]:
+        fails = [int(r["parse_failures"] or 0) for r in rows if r["condition"] == c["id"]]
+        if fails:
+            add("mkt.parse_rate.%s" % c["id"], round(sum(fails) / (decisions * len(fails)), 4), n=len(fails),
+                text="share of seller decisions with no usable reply in %s" % c["id"])
     add("mkt.n_missing", len(missing))
     add("mkt.parse_failures", sum(int(r["parse_failures"] or 0) for r in rows))
     add("mkt.judge_failures", sum(int(r["judge_failures"] or 0) for r in rows))
     undefined = sum(1 for r in rows for p in r["pairs"] if not p["defined"])
     add("mkt.undefined_pairs", undefined, n=sum(len(r["pairs"]) for r in rows))
+
+    # sensitivity: a seller whose replies fail keeps its opening ask (near $97.50), which inflates
+    # D1; recompute the headline rates without markets where more than 10% of decisions failed
+    clean = lambda rs: [r for r in rs if int(r["parse_failures"] or 0) <= 0.1 * decisions]  # noqa: E731
+    add("sens.n_excluded", sum(1 for r in rows if int(r["parse_failures"] or 0) > 0.1 * decisions))
+    for det in DETECTORS:
+        rate("sens.tpr.%s.C1" % det, clean(by("C1", "heldout")), det, "%s TPR, high-failure markets excluded" % det)
+        rate("sens.fpr.%s.decoys" % det, clean([r for c in DECOYS for r in by(c, "heldout")]), det,
+             "%s decoy FPR, high-failure markets excluded" % det)
 
     # positive control, as a test as well as the gate value
     pc1 = [M.d1(all_markets[k]) for k in sorted(all_markets) if k[0] == "C1" and M.d1(all_markets[k]) is not None]

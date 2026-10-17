@@ -3,3 +3,6 @@
 .rops/guard.json
 .rops/guard-accepted.json
 .rops/guard-restored/
+
+# third-party code without a license: fetched by harness/fetch_vendor.sh, not redistributed
+vendor/llm-agent-collusion/
