@@ -1,0 +1,14 @@
+[
+  {"authors": "Fish, S., Gonczarowski, Y. A., Shorrer, R. I.", "year": 2024, "title": "Algorithmic Collusion by Large Language Models", "venue": "arXiv:2404.00806", "url": "https://arxiv.org/abs/2404.00806"},
+  {"authors": "Agrawal, K., Teo, V., Vazquez, J. J., Kunnavakkam, S., Srikanth, V., Liu, A.", "year": 2025, "title": "Evaluating LLM Agent Collusion in Double Auctions", "venue": "arXiv:2507.01413", "url": "https://arxiv.org/abs/2507.01413"},
+  {"authors": "Keppo, J., Li, Y., Tsoukalas, G., Yuan, N.", "year": 2026, "title": "On the Fragility of AI Agent Collusion", "venue": "arXiv:2603.20281", "url": "https://arxiv.org/abs/2603.20281"},
+  {"authors": "Nakamura, M., Kumar, A., Das, S., Abdelnabi, S., Mahmud, S., Fioretto, F., Zilberstein, S., Bagdasarian, E.", "year": 2026, "title": "Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems", "venue": "arXiv:2602.15198", "url": "https://arxiv.org/abs/2602.15198"},
+  {"authors": "Xu, X., Wu, C., Lu, J., Tan, K., Tao, S., Hong, H.", "year": 2026, "title": "Collusion with Competitive Marginals: Price-Level Audits Are Blind by Construction", "venue": "arXiv:2607.26385", "url": "https://arxiv.org/abs/2607.26385"},
+  {"authors": "Supreme Court of the United States", "year": 2007, "title": "Bell Atlantic Corp. v. Twombly, 550 U.S. 544", "venue": "U.S. Reports", "url": "https://supreme.justia.com/cases/federal/us/550/544/"},
+  {"authors": "Kovacic, W. E., Marshall, R. C., Marx, L. M., White, H. L.", "year": 2011, "title": "Plus Factors and Agreement in Antitrust Law", "venue": "Michigan Law Review 110(3), 393-436", "url": "https://repository.law.umich.edu/mlr/vol110/iss3/1/"},
+  {"authors": "Berger, L. F., Weiner, M. L., Jiang, W.", "year": 2025, "title": "Coordination by Code: Rethinking Antitrust Liability in the Age of AI Pricing", "venue": "Antitrust 40(1), ABA Section of Antitrust Law", "url": "https://www.americanbar.org/groups/antitrust_law/resources/magazine/2025-fall/coordination-code-rethinking-antitrust-liability-age-ai-pricing/"},
+  {"authors": "Rippin, J. L., Marshall, S. C., Africa, D. D., Schroeder de Witt, C.", "year": 2026, "title": "Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems", "venue": "arXiv:2606.28425", "url": "https://arxiv.org/abs/2606.28425"},
+  {"authors": "Cliff, D.", "year": 1997, "title": "Minimal-Intelligence Agents for Bargaining Behaviours in Market-Based Environments", "venue": "HP Laboratories Technical Report HPL-97-91", "url": "https://www.hpl.hp.com/techreports/97/HPL-97-91.html"},
+  {"authors": "Qwen Team", "year": 2024, "title": "Qwen2.5 Technical Report", "venue": "arXiv:2412.15115", "url": "https://arxiv.org/abs/2412.15115"},
+  {"authors": "Grattafiori, A., et al.", "year": 2024, "title": "The Llama 3 Herd of Models", "venue": "arXiv:2407.21783", "url": "https://arxiv.org/abs/2407.21783"}
+]

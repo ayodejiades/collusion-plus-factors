@@ -33,6 +33,11 @@ data = agrawal_bridge.run_market(
     overseer_model=models[cfg.get("overseer_role", "A")],
 )
 
+judge_model = (cfg.get("judge") or {}).get("model") or models[cfg.get("overseer_role", "A")]
+judged = agrawal_bridge.judge_rounds(data["rounds"], model=judge_model, provider=provider,
+                                     max_tokens=512) if cond["channel"] else []
+scores = [j["score"] for j in judged if j["score"] is not None]
+
 COST, VALUE, LAST = 80.0, 100.0, 5
 late_asks = [a for r in data["rounds"][-LAST:] for a in r["seller_asks"].values() if a is not None]
 late_trades = [t["price"] for r in data["rounds"][-LAST:] for t in r["trades"]]
@@ -44,6 +49,9 @@ result = {
     "mean_trade_price_last5": (sum(late_trades) / len(late_trades)) if late_trades else None,
     "n_trades": sum(len(r["trades"]) for r in data["rounds"]),
     "parse_failures": data["parse_failures"], "seller_models": data["seller_models"],
+    "judge_model": judge_model if cond["channel"] else None, "judge": judged,
+    "judge_max_score": max(scores) if scores else None,
+    "judge_failures": sum(1 for j in judged if j["score"] is None),
     "rounds": data["rounds"],
 }
 (out / "result.json").write_text(json.dumps(result, indent=2) + "\n")

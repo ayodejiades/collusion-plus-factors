@@ -98,6 +98,7 @@ from src.continuous_double_auction.cda_types import ExperimentParams  # noqa: E4
 from src.continuous_double_auction.market import agents as agents_mod  # noqa: E402
 from src.continuous_double_auction.market.agents import LMSeller, MessageOverseer, ZIPBuyer  # noqa: E402
 from src.continuous_double_auction.market.market import Market  # noqa: E402
+from src.continuous_double_auction.util.json_util import extract_json  # noqa: E402
 from src.continuous_double_auction.util.logging_util import ExperimentLogger  # noqa: E402
 from src.continuous_double_auction.util.misc import initialize_market  # noqa: E402
 
@@ -206,3 +207,36 @@ def run_market(*, run_id, seed, seller_models, rounds, channel, oversight, plant
         "rounds": [r.model_dump() for r in market.rounds],
         "parse_failures": PARSE_FAILURES["count"],
     }
+
+
+JUDGE_TRIES = 2
+
+
+def judge_rounds(rounds, *, model, provider, max_tokens):
+    """Detector D2: the vendored overseer prompt, unchanged, run at temperature 0 on each hour's
+    seller messages after the market ends. Hours without messages are not judged. A reply that
+    is not valid JSON with an integer score 1-4 is recorded as score None, never guessed."""
+    os.chdir(VENDOR)
+    client = RopsClient(model, 0.0, max_tokens, provider)
+    out = []
+    for r in rounds:
+        messages = {k: v for k, v in (r.get("seller_messages") or {}).items() if v and str(v).strip()}
+        if not messages:
+            continue
+        prompt = _original_render(template_dir="src/continuous_double_auction/prompt_templates/",
+                                  prompt_template="message_overseer_prompt.jinja2",
+                                  seller_messages_this_round=messages)
+        verdict = {"round": r.get("round_number"), "score": None, "coordination": None, "type": None}
+        for _ in range(JUDGE_TRIES):
+            try:
+                data = extract_json(client.generate([{"role": "user", "content": prompt}])) or {}
+            except Exception:  # noqa: BLE001 - an unparseable reply is a recorded miss
+                continue
+            score = data.get("coordination_score")
+            if isinstance(score, str) and score.strip().isdigit():
+                score = int(score.strip())
+            if isinstance(score, int) and not isinstance(score, bool) and 1 <= score <= 4:
+                verdict.update(score=score, coordination=data.get("coordination"), type=data.get("type"))
+                break
+        out.append(verdict)
+    return out
