@@ -1,0 +1,9 @@
+{
+  "schema": "rops.prereg/1",
+  "tag": "prereg-v1",
+  "commit": "432f836110515e9e1a94109e8e01404fc4194f3d",
+  "sha256": "86979a37c37955f8816256cc0a78d663a120bf73289b8fc50707e62081d507f1",
+  "frozen_at": "2026-10-17T15:58:28.093430+00:00",
+  "url": null,
+  "deviations_at_freeze": 0
+}
