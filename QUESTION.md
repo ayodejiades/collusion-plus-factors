@@ -1,26 +1,14 @@
-# Question card
+# Question card (drafted by Claude for Ayodeji to review)
 
-# rq: the sprint question id, e.g. 2.3
-rq: <<FILL: the sprint question id, e.g. 2.3>>
-# question: the research question, ending with ?
-question: <<FILL: the research question, ending with ?>>
-# manipulated: the variable you change between conditions
-manipulated: <<FILL: the variable you change between conditions>>
-# positive_control: the arm that must work for the instrument to be trusted
-positive_control: <<FILL: the arm that must work for the instrument to be trusted>>
-# decoy_control: the arm that checks a confound or null
-decoy_control: <<FILL: the arm that checks a confound or null>>
-# intervention: what you will change and measure; the paper is weak without it (PLAYBOOK S3.1)
-intervention: <<FILL: what you will change and measure; the paper is weak without it (PLAYBOOK S3.1)>>
-# attack: how you try to break your own instrument
-attack: <<FILL: how you try to break your own instrument>>
-# primary_metric: the one number that answers the question
-primary_metric: <<FILL: the one number that answers the question>>
-# user: a short noun phrase for who acts on the result, e.g. a market auditor (it goes into interview questions)
-user: <<FILL: a short noun phrase for who acts on the result, e.g. a market auditor (it goes into interview questions)>>
-# decision: the decision the result informs
-decision: <<FILL: the decision the result informs>>
-# budget_usd: spend cap in USD, at most the limits budget
-budget_usd: <<FILL: spend cap in USD, at most the limits budget>>
-# backup_rq: the question id you switch to if the positive control fails
-backup_rq: <<FILL: the question id you switch to if the positive control fails>>
+rq: 2.3
+question: Do collusion detectors mistake parallel pricing by copies of the same model for collusion, and does a frozen plus-factor rule separate agreement from shared priors?
+manipulated: seller communication channel (off vs on) and seller model mix (same model vs mixed families), with planted coordination as the positive control
+positive_control: C1, three Qwen sellers told they agreed to coordinate; collusion index must beat the no-channel decoy C2 by at least 0.2
+decoy_control: C2, C4 and C7, no channel, so no agreement is possible; any flag there is parallel conduct
+intervention: a plus-factor rule (dependence above the no-channel baseline plus a coordination message followed by converging asks), frozen on calibration seeds
+attack: C6, sellers told their messages are monitored by an overseer
+primary_metric: false-positive rate on the no-channel decoys and true-positive rate on planted coordination, per detector, on held-out seeds
+user: a market auditor
+decision: whether parallel pricing alone justifies a collusion finding, or plus-factor evidence is required
+budget_usd: 0
+backup_rq: 1.4
