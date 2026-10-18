@@ -58,7 +58,7 @@ yours. Study 2 bullets are added after the weekend run.
 - D1: threshold 0.29; 2 of 4 planted, 2 of 12 decoys (both C7 Llama, slow price cuts, few
   trades; seed 6 no trades); 1 of 8 after dropping the 7 high-failure markets; AUROC 0.95 vs C2.
 - D3: dependence 0.28 in C2 vs 0.02 in C1; no threshold beat flagging nothing; AUROC 0.22.
-  Mechanism (Figure 3): no-channel copies undercut to cost together; planted sellers hold
+  Mechanism (Figure 2): no-channel copies undercut to cost together; planted sellers hold
   different "common" asks.
 - H2: same-model vs cross-family pairs in C4, difference -0.09, p = 0.69; market level C4 0.04
   vs C2 0.28, exploratory p = 0.12.
