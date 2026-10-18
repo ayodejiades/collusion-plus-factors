@@ -2,6 +2,8 @@
 
 # No Single Signal Separates Agreement From Parallel Conduct Among LLM Sellers
 
+Ayodeji Adesegun, Team discreet, Lagos, Nigeria
+
 ## Abstract
 
 A market auditor who sees AI pricing agents move prices together must decide whether that is evidence of collusion; antitrust law says parallel conduct alone is not. I test this on LLM sellers in the Agrawal et al. double auction, in two preregistered studies of 56 markets each, with no-channel markets, where agreement is impossible, as decoys. Planted agreements raised the collusion index to 0.30, and to 0.75 with an explicit price floor, against 0.03 without a channel. No single signal was reliable: prices moved together more without a channel than under planted agreement, and an LLM judge flagged all 24 channel markets that priced at cost. In the confirmatory study, a judge extracting the proposed price cut those false alarms from 15 of 15 to 7 (Holm p = 0.04). Requiring high prices plus price-holding talk raised no false alarm on 32 known negatives but missed failed agreements.
