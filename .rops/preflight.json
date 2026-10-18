@@ -3,16 +3,16 @@
     {
       "id": 1,
       "name": "lint",
-      "status": "FAIL",
-      "detail": "16 FAIL: FAIL L03 line 15: the Results section never mentions the positive control",
-      "fix": "rops-lint paper/paper.md --sprint .rops/sprint.json"
+      "status": "PASS",
+      "detail": "no FAIL",
+      "fix": ""
     },
     {
       "id": 2,
       "name": "claims",
-      "status": "FAIL",
-      "detail": "FAIL judge: experiment.json has a judge but no claim id starts with judge.agreement",
-      "fix": "rops-claims verify ."
+      "status": "PASS",
+      "detail": "every paper number matches the claims table",
+      "fix": ""
     },
     {
       "id": 3,
@@ -38,30 +38,30 @@
     {
       "id": 6,
       "name": "redteam",
-      "status": "FAIL",
-      "detail": "A1: Status must be fixed, limited or rejected",
-      "fix": "rops-redteam check ."
+      "status": "PASS",
+      "detail": "REDTEAM.md answers every standing attack",
+      "fix": ""
     },
     {
       "id": 7,
       "name": "reproduce",
-      "status": "FAIL",
-      "detail": "README names make agreement, which the Makefile lacks",
-      "fix": "add that target to Makefile, or fix the name in README.md"
+      "status": "PASS",
+      "detail": "README.md has ## Reproduce and its targets exist",
+      "fix": ""
     },
     {
       "id": 8,
       "name": "pdf",
-      "status": "SKIP",
-      "detail": "run rops-doc pull, or pass --pdf, before submitting",
-      "fix": "rops-doc pull ."
+      "status": "FAIL",
+      "detail": "9 pages; the sprint allows 4–8",
+      "fix": "fix the PDF: 9 pages; the sprint allows 4–8"
     },
     {
       "id": 9,
       "name": "git clean",
-      "status": "FAIL",
-      "detail": "uncommitted changes: paper/DRAFT.md, paper/allow_numbers.txt, .rops/template.docx",
-      "fix": "git -C . add -A && git -C . commit -m 'pre-submission'"
+      "status": "PASS",
+      "detail": "no uncommitted changes",
+      "fix": ""
     },
     {
       "id": 10,
@@ -74,21 +74,21 @@
       "id": 11,
       "name": "public repo",
       "status": "SKIP",
-      "detail": "--offline",
+      "detail": "no GitHub remote named origin",
       "fix": ""
     },
     {
       "id": 12,
       "name": "links live",
-      "status": "SKIP",
-      "detail": "--offline",
+      "status": "PASS",
+      "detail": "2 link(s) load",
       "fix": ""
     },
     {
       "id": 13,
       "name": "deadline",
       "status": "PASS",
-      "detail": "8d 8h 25m left · deadline Mon 26 Oct 12:59 Lagos · Sun 25 Oct 23:59 AoE",
+      "detail": "7d 21h 31m left · deadline Mon 26 Oct 12:59 Lagos · Sun 25 Oct 23:59 AoE",
       "fix": ""
     },
     {
@@ -101,19 +101,19 @@
     {
       "id": 15,
       "name": "coverage",
-      "status": "FAIL",
-      "detail": "FAIL Abstract: missing [claim:pc.mean] = 0.29757083333333306",
-      "fix": "rops-outline check ."
+      "status": "PASS",
+      "detail": "the paper states every required claim",
+      "fix": ""
     },
     {
       "id": 16,
       "name": "disclosure",
-      "status": "FAIL",
-      "detail": "the LLM Usage Statement does not say that a model drafted the text",
-      "fix": "state plainly in the LLM Usage Statement which model drafted the text, and what the authors did"
+      "status": "PASS",
+      "detail": "the LLM Usage Statement says a model drafted the text",
+      "fix": ""
     }
   ],
-  "pass": 4,
-  "fail": 7,
-  "skip": 5
+  "pass": 12,
+  "fail": 1,
+  "skip": 3
 }
