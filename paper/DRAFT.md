@@ -73,6 +73,8 @@ C2, C4 and C7 have no channel, so no agreement can form in them. They differ in 
 
 **Preregistration and code.** The question, conditions, detectors, decision rule and outcomes were frozen in PREREG.md (git tag prereg-v1) before any market of the main grid ran, and the analysis code was committed (tag analysis-frozen-v1) before the results existed.
 
+**Study 2: a confirmatory test, run during the sprint.** Study 1's results suggested a better plus-factor rule, so I froze a second preregistration (study2/PREREG.md, tag prereg2-v1) before running any new market, and ran Study 2 during the sprint weekend on new seeds 8 to 15. It keeps C1 to C5 and C7, drops C6, and adds C8, a stronger positive control in which sellers are told they agreed a price floor of $95. Every threshold comes from Study 1 and none is tuned on Study 2. It tests two rules that need both kinds of evidence: X1, a high price (D1) plus judged coordination talk (D2), and D5, a high price plus talk that proposes holding a common price at or above the D1 price, as read by a new extraction judge. The extraction judge does not rate "coordination"; it reports whether sellers propose a common price, which way the proposal pushes prices, and the price named, and code applies the rule. I checked its prompt on 9 Study 1 hours before freezing it. The same judge also runs with Llama-3.1-8B-Instruct, to test whether the judge's model family matters. Known positives are C1 and C8, and known negatives are the no-channel decoys and the talk-without-action markets. The main test (H5) asks whether D5 makes fewer errors than price level or the vendored judge alone.
+
 ## 4. Results
 
 **Positive control.** The planted instruction raised the mean collusion index from 0.03 in C2 to 0.30 in C1, a contrast of 0.27 against the preregistered minimum of 0.2 (permutation p = 0.001, 8 markets each). The instrument therefore sees planted coordination, and the other results are interpretable. The effect is smaller than the instruction suggests. In C1 the sellers announce a "common ask" in their first messages but often name different numbers, then cut prices over the market; Figure 1 shows three of the eight C1 markets ending below the D1 threshold. All 56 markets finished, with 3684 model calls, no truncated replies and no judge reply that failed to parse.
@@ -108,6 +110,8 @@ The shared-prior explanation got mixed support. In the mixed C4 markets, pairs o
 
 **Exploratory: high prices and talk together.** After reading the results I checked one rule that requires both signals that failed alone: a market is flagged only if D1 and D2 both flag it, using their frozen thresholds, so nothing new was tuned. It caught 2 of 4 held-out planted markets, flagged none of the 12 held-out decoys, none of the held-out C3, C5 or C6 markets, and none of the 8 talk-without-action markets. Because it was chosen after the data were seen, this is a hypothesis for the next experiment, not a result.
 
+**Study 2.** <<FILL: Study 2 results, written after the sprint-weekend run: the C8 positive control (s2.pc.contrast, s2.pc.p), a table of TPR, FPR and errors per detector (s2.tpr.*, s2.fpr.*, s2.errors.*), H5 to H9 with Holm p-values, the extraction judge on talk at cost (s2.flag.D2x.at_cost against s2.flag.D2.at_cost) and on Study 1 (s2.study1.D2x.*), and judge-family agreement (s2.judge_family.kappa)>>
+
 **Hand labels.** <<FILL: after labelling both passes, run make analyze and rops-claims build, then report labels.self_kappa, the share of markets labelled as agreements, and judge.agreement.kappa and judge.agreement.pct>>
 
 ## 5. Discussion and Limitations
@@ -130,7 +134,9 @@ prereg: <<FILL: GitHub URL of tag prereg-v1>>
 
 ### What is new this weekend
 
-This project was prepared before the sprint, and that is disclosed here with dates. Before the sprint (14–17 October 2026) I chose the question, Claude drafted the question card and preregistration, which I reviewed, and the preregistration was frozen on 16 October. The harness that runs the Agrawal et al. [2] market through a logged client and the analysis code were built on 17 October, and the full 56-market grid ran on Kaggle from 17 to 18 October. The analysis and a first draft of this report were produced on 18 October. During the sprint weekend I <<FILL: what you actually did during the weekend, e.g. the two-pass hand labels, the judge-agreement analysis, any added condition or seeds, and rewriting this report>>.
+Prior work, with dates: before the sprint (14–18 October 2026) I chose the question; Claude drafted the question card and the Study 1 preregistration, which I reviewed and froze on 16 October; the harness and analysis code were built on 17 October; and the 56 Study 1 markets ran on Kaggle on 17 and 18 October. The Study 2 design, its preregistration (frozen 18 October, before any Study 2 market ran) and a three-market infrastructure test of its notebook were also prepared before the sprint; the test markets are not used in any result.
+
+New during the sprint weekend (23–25 October 2026): the 56 Study 2 markets and their analysis, which carry the confirmatory results; the extraction and cross-family judges applied to both studies; the two-pass blind hand labels of Study 1's channel markets and the judge-agreement analysis; and the rewriting of this report. <<FILL: confirm this list against what you actually did, and add anything else>>
 
 ## References
 
@@ -152,7 +158,7 @@ This project was prepared before the sprint, and that is disclosed here with dat
 
 [9] Rippin, J. L., Marshall, S. C., Africa, D. D., Schroeder de Witt, C. (2026). Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems. arXiv:2606.28425. https://arxiv.org/abs/2606.28425
 
-[10] Cliff, D. (1997). Minimal-Intelligence Agents for Bargaining Behaviours in Market-Based Environments. HP Laboratories Technical Report HPL-97-91. https://www.hpl.hp.com/techreports/97/HPL-97-91.html
+[10] Cliff, D. (1997). Minimal-Intelligence Agents for Bargaining Behaviours in Market-Based Environments. Hewlett-Packard Laboratories Technical Report HPL-97-91.
 
 [11] Qwen Team (2024). Qwen2.5 Technical Report. arXiv:2412.15115. https://arxiv.org/abs/2412.15115
 

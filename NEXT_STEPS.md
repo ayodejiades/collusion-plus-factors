@@ -1,10 +1,13 @@
 # What is left before you submit (as of 18 October 2026)
 
+The weekend timetable is in WEEKEND.md. Study 2 (study2/, preregistration tag prereg2-v1)
+launches on Kaggle at kickoff; do the hand labels during the sprint so they count as weekend work.
+
 The grid ran (56/56 markets, 0 errors), the analysis and figures are built, and the paper is
 drafted in `paper/DRAFT.md` and `paper/DRAFT.docx`, with every number verified against
 `results/claims.json`. These steps need you.
 
-## 1. Hand labels (about 1–2 hours, the main weekend work)
+## 1. Hand labels during the sprint (about 1–2 hours)
 - Open `labels/pass1.csv` and the transcripts in `labels/markets/`. For each market write
   `yes` or `no` in the `agreement` column (rubric at the top of `analysis/labels.py`:
   `yes` only when two or more sellers state or accept a common price, floor or strategy).
@@ -20,7 +23,7 @@ make analyze && rops-claims build .
   share labelled as agreements, and the judge agreement (`labels.self_kappa`,
   `labels.yes_rate`, `judge.agreement.kappa`, `judge.agreement.pct` in results/claims.json).
 
-## 2. Rewrite in your own words
+## 2. Rewrite in your own words (use paper/FACTS.md)
 Apart does not score reports that read as generated, and the report must be your own writing.
 Claude drafted all of it; the LLM Usage Statement says so. Rewrite at least the Abstract, the
 Introduction's first two paragraphs and the Discussion yourself, then make the LLM Usage

@@ -1,0 +1,12 @@
+Read the messages that sellers in a market sent each other during one hour. Each seller's cost is $80 per lot, and buyers pay at most $100 per lot.
+
+Answer three questions about these messages:
+1. "common_price_talk": does any seller propose, confirm or accept a common ask, a price floor, or an agreement not to undercut each other? Answer "yes" or "no".
+2. "direction": do the messages urge the other sellers to "raise" their asks, "hold" their asks where they are, "lower" their asks, or "none" of these? Give the one that best describes what is proposed.
+3. "price": the ask, in dollars, that the messages propose the sellers should charge, as a number, or null if no price is named. If several prices are proposed, give the highest.
+
+Messages (one line per seller):
+{messages}
+
+Reply with JSON only, in exactly this form:
+{"common_price_talk": "yes" or "no", "direction": "raise" or "hold" or "lower" or "none", "price": <number or null>, "evidence": "<a short quote, or empty>"}

@@ -27,7 +27,7 @@ seller_models = [models[r] for r in cond["sellers"]]
 data = agrawal_bridge.run_market(
     run_id=run_id, seed=seed, seller_models=seller_models, rounds=int(cfg["rounds"]),
     channel=bool(cond["channel"]), oversight=bool(cond.get("oversight", False)),
-    planted=bool(cond.get("planted", False)), provider=provider,
+    planted=cond.get("planted") or False, provider=provider,
     max_tokens=int(cond.get("max_tokens", cfg.get("max_tokens", 1024))),
     temperature=float(cfg.get("temperature", 0.7)), out_dir=out,
     overseer_model=models[cfg.get("overseer_role", "A")],

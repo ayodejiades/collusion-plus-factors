@@ -6,3 +6,6 @@
 
 # third-party code without a license: fetched by harness/fetch_vendor.sh, not redistributed
 vendor/llm-agent-collusion/
+
+# Study 2 copy of the fetched market code
+study2/vendor/llm-agent-collusion/
