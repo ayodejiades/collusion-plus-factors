@@ -40,3 +40,11 @@ The grid is run with `--force-main`, so the main arms are run whatever the posit
 gives. The decision rule is unchanged: if C1 does not beat C2 by 0.2, the paper reports the
 failed instrument and the backup question is used. Running the other arms costs nothing (free
 Kaggle GPU) and lets the failure be described fully.
+
+## D5: An undefined threshold flags nothing (written 18 October 2026, after the results were read)
+On the calibration markets no D3 threshold gave a higher TPR minus FPR than flagging nothing
+(dependence was higher in C2 than in C1), so the Youden rule returns no threshold. D3 then flags
+no market, which is what the rule implies. The first run of analysis/detect.py skipped H1 and H3
+in this case; the code now runs them with D3 flagging nothing. No threshold or test was changed.
+Every analysis marked "exploratory" in analysis/detect.py (section 7) was added after the results
+were read and is reported as exploratory.

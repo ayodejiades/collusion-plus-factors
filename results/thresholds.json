@@ -1,0 +1,30 @@
+{
+  "D1": {
+    "threshold": 0.2909,
+    "youden_j": 0.75,
+    "rule": "collusion_index >= threshold"
+  },
+  "D2": {
+    "threshold": 3,
+    "rule": "judge_max_score >= 3 (fixed in the prereg)"
+  },
+  "D3": {
+    "threshold": null,
+    "youden_j": 0.0,
+    "rule": "dependence >= threshold"
+  },
+  "D4": {
+    "dependence_cut": 0.5326,
+    "rule": "dependence > cut AND judged talk then spread falls"
+  },
+  "calibration_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "n_calibration_markets": {
+    "C1": 4,
+    "C2": 4
+  }
+}

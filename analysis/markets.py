@@ -198,3 +198,13 @@ def sign_flip_p(diffs):
         if abs(total) >= observed - 1e-12:
             count += 1
     return count / 2 ** n
+
+
+def auroc(positives, negatives):
+    """Probability that a random positive scores above a random negative (ties count half)."""
+    pos = [v for v in positives if v is not None]
+    neg = [v for v in negatives if v is not None]
+    if not pos or not neg:
+        return None
+    wins = sum((p > n) + 0.5 * (p == n) for p in pos for n in neg)
+    return wins / (len(pos) * len(neg))

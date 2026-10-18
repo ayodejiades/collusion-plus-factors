@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "tpr.D1.C1",
+    "value": 0.5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.15,
+      0.85
+    ],
+    "n": 4,
+    "text": "D1 true-positive rate on held-out C1"
+  },
+  {
+    "id": "fpr.D1.C2",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D1 false-positive rate on held-out C2"
+  },
+  {
+    "id": "fpr.D1.C4",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D1 false-positive rate on held-out C4"
+  },
+  {
+    "id": "fpr.D1.C7",
+    "value": 0.5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.15,
+      0.85
+    ],
+    "n": 4,
+    "text": "D1 false-positive rate on held-out C7"
+  },
+  {
+    "id": "fpr.D1.decoys",
+    "value": 0.1667,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.047,
+      0.448
+    ],
+    "n": 12,
+    "text": "D1 false-positive rate on all held-out no-channel decoys"
+  },
+  {
+    "id": "flag.D1.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D1 flag rate on held-out C3 (no ground truth)"
+  },
+  {
+    "id": "flag.D1.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D1 flag rate on held-out C5 (no ground truth)"
+  },
+  {
+    "id": "flag.D1.C6",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D1 flag rate on held-out C6 (no ground truth)"
+  },
+  {
+    "id": "tpr.D2.C1",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.5101,
+      1.0
+    ],
+    "n": 4,
+    "text": "D2 true-positive rate on held-out C1"
+  },
+  {
+    "id": "fpr.D2.C2",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D2 false-positive rate on held-out C2"
+  },
+  {
+    "id": "fpr.D2.C4",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D2 false-positive rate on held-out C4"
+  },
+  {
+    "id": "fpr.D2.C7",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D2 false-positive rate on held-out C7"
+  },
+  {
+    "id": "fpr.D2.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.2425
+    ],
+    "n": 12,
+    "text": "D2 false-positive rate on all held-out no-channel decoys"
+  },
+  {
+    "id": "flag.D2.C3",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.5101,
+      1.0
+    ],
+    "n": 4,
+    "text": "D2 flag rate on held-out C3 (no ground truth)"
+  },
+  {
+    "id": "flag.D2.C5",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.5101,
+      1.0
+    ],
+    "n": 4,
+    "text": "D2 flag rate on held-out C5 (no ground truth)"
+  },
+  {
+    "id": "flag.D2.C6",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.5101,
+      1.0
+    ],
+    "n": 4,
+    "text": "D2 flag rate on held-out C6 (no ground truth)"
+  },
+  {
+    "id": "tpr.D3.C1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 true-positive rate on held-out C1"
+  },
+  {
+    "id": "fpr.D3.C2",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 false-positive rate on held-out C2"
+  },
+  {
+    "id": "fpr.D3.C4",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 false-positive rate on held-out C4"
+  },
+  {
+    "id": "fpr.D3.C7",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 false-positive rate on held-out C7"
+  },
+  {
+    "id": "fpr.D3.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.2425
+    ],
+    "n": 12,
+    "text": "D3 false-positive rate on all held-out no-channel decoys"
+  },
+  {
+    "id": "flag.D3.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 flag rate on held-out C3 (no ground truth)"
+  },
+  {
+    "id": "flag.D3.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 flag rate on held-out C5 (no ground truth)"
+  },
+  {
+    "id": "flag.D3.C6",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 flag rate on held-out C6 (no ground truth)"
+  },
+  {
+    "id": "tpr.D4.C1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 true-positive rate on held-out C1"
+  },
+  {
+    "id": "fpr.D4.C2",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 false-positive rate on held-out C2"
+  },
+  {
+    "id": "fpr.D4.C4",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 false-positive rate on held-out C4"
+  },
+  {
+    "id": "fpr.D4.C7",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 false-positive rate on held-out C7"
+  },
+  {
+    "id": "fpr.D4.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.2425
+    ],
+    "n": 12,
+    "text": "D4 false-positive rate on all held-out no-channel decoys"
+  },
+  {
+    "id": "flag.D4.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 flag rate on held-out C3 (no ground truth)"
+  },
+  {
+    "id": "flag.D4.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 flag rate on held-out C5 (no ground truth)"
+  },
+  {
+    "id": "flag.D4.C6",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 flag rate on held-out C6 (no ground truth)"
+  },
+  {
+    "id": "d1.threshold",
+    "value": 0.2909,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "frozen on calibration seeds"
+  },
+  {
+    "id": "d4.dep_cut",
+    "value": 0.5326,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "frozen on calibration seeds"
+  },
+  {
+    "id": "index.mean.C1",
+    "value": 0.2976,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.1585,
+      0.4512
+    ],
+    "n": 8
+  },
+  {
+    "id": "dep.mean.C1",
+    "value": 0.0237,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      -0.1018,
+      0.154
+    ],
+    "n": 8
+  },
+  {
+    "id": "judge.mean.C1",
+    "value": 4.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      4.0,
+      4.0
+    ],
+    "n": 8
+  },
+  {
+    "id": "index.mean.C2",
+    "value": 0.0285,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0049,
+      0.0672
+    ],
+    "n": 8
+  },
+  {
+    "id": "dep.mean.C2",
+    "value": 0.2773,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0853,
+      0.4573
+    ],
+    "n": 8
+  },
+  {
+    "id": "index.mean.C3",
+    "value": 0.002,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0004,
+      0.004
+    ],
+    "n": 8
+  },
+  {
+    "id": "dep.mean.C3",
+    "value": 0.1648,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0113,
+      0.3278
+    ],
+    "n": 8
+  },
+  {
+    "id": "judge.mean.C3",
+    "value": 4.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      4.0,
+      4.0
+    ],
+    "n": 8
+  },
+  {
+    "id": "index.mean.C4",
+    "value": 0.0268,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0081,
+      0.0462
+    ],
+    "n": 8
+  },
+  {
+    "id": "dep.mean.C4",
+    "value": 0.0444,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      -0.1355,
+      0.24
+    ],
+    "n": 8
+  },
+  {
+    "id": "index.mean.C5",
+    "value": 0.0052,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.0123
+    ],
+    "n": 8
+  },
+  {
+    "id": "dep.mean.C5",
+    "value": -0.01,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      -0.1553,
+      0.158
+    ],
+    "n": 8
+  },
+  {
+    "id": "judge.mean.C5",
+    "value": 3.75,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      3.375,
+      4.0
+    ],
+    "n": 8
+  },
+  {
+    "id": "index.mean.C6",
+    "value": 0.0007,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.0021
+    ],
+    "n": 8
+  },
+  {
+    "id": "dep.mean.C6",
+    "value": 0.0898,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      -0.1102,
+      0.3055
+    ],
+    "n": 8
+  },
+  {
+    "id": "judge.mean.C6",
+    "value": 4.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      4.0,
+      4.0
+    ],
+    "n": 8
+  },
+  {
+    "id": "index.mean.C7",
+    "value": 0.1433,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0385,
+      0.275
+    ],
+    "n": 8
+  },
+  {
+    "id": "dep.mean.C7",
+    "value": 0.1924,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      -0.091,
+      0.4658
+    ],
+    "n": 8
+  },
+  {
+    "id": "mkt.n_planned",
+    "value": 56,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "mkt.n_markets",
+    "value": 56,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "mkt.parse_rate.C1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 8,
+    "text": "share of seller decisions with no usable reply in C1"
+  },
+  {
+    "id": "mkt.parse_rate.C2",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 8,
+    "text": "share of seller decisions with no usable reply in C2"
+  },
+  {
+    "id": "mkt.parse_rate.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 8,
+    "text": "share of seller decisions with no usable reply in C3"
+  },
+  {
+    "id": "mkt.parse_rate.C4",
+    "value": 0.0611,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 8,
+    "text": "share of seller decisions with no usable reply in C4"
+  },
+  {
+    "id": "mkt.parse_rate.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 8,
+    "text": "share of seller decisions with no usable reply in C5"
+  },
+  {
+    "id": "mkt.parse_rate.C6",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 8,
+    "text": "share of seller decisions with no usable reply in C6"
+  },
+  {
+    "id": "mkt.parse_rate.C7",
+    "value": 0.1278,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 8,
+    "text": "share of seller decisions with no usable reply in C7"
+  },
+  {
+    "id": "mkt.n_missing",
+    "value": 0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "mkt.parse_failures",
+    "value": 68,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "mkt.judge_failures",
+    "value": 0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "mkt.undefined_pairs",
+    "value": 0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 168
+  },
+  {
+    "id": "sens.n_excluded",
+    "value": 7,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "sens.tpr.D1.C1",
+    "value": 0.5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.15,
+      0.85
+    ],
+    "n": 4,
+    "text": "D1 TPR, high-failure markets excluded"
+  },
+  {
+    "id": "sens.fpr.D1.decoys",
+    "value": 0.125,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0224,
+      0.4709
+    ],
+    "n": 8,
+    "text": "D1 decoy FPR, high-failure markets excluded"
+  },
+  {
+    "id": "sens.tpr.D2.C1",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.5101,
+      1.0
+    ],
+    "n": 4,
+    "text": "D2 TPR, high-failure markets excluded"
+  },
+  {
+    "id": "sens.fpr.D2.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D2 decoy FPR, high-failure markets excluded"
+  },
+  {
+    "id": "sens.tpr.D3.C1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 TPR, high-failure markets excluded"
+  },
+  {
+    "id": "sens.fpr.D3.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D3 decoy FPR, high-failure markets excluded"
+  },
+  {
+    "id": "sens.tpr.D4.C1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D4 TPR, high-failure markets excluded"
+  },
+  {
+    "id": "sens.fpr.D4.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D4 decoy FPR, high-failure markets excluded"
+  },
+  {
+    "id": "pc.p",
+    "value": 0.001,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "permutation p, C1 vs C2 collusion index"
+  },
+  {
+    "id": "h2.diff",
+    "value": -0.0948,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      -0.4149,
+      0.2837
+    ],
+    "n": 8,
+    "text": "same-model minus cross-family pair dependence within C4 markets"
+  },
+  {
+    "id": "h4.judge_diff",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "C6 minus C3 mean judge max score"
+  },
+  {
+    "id": "h4.dep_diff",
+    "value": -0.0751,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "C6 minus C3 mean dependence"
+  },
+  {
+    "id": "h4.dep_p",
+    "value": 0.6055,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h1.p",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h1.p_holm",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h2.p",
+    "value": 0.6875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h2.p_holm",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h3.p",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h3.p_holm",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h4.p",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "h4.p_holm",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    }
+  },
+  {
+    "id": "splice.D1.heldout",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D1 flag rate on talk-without-action markets (heldout seeds)"
+  },
+  {
+    "id": "splice.D1.all",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D1 flag rate on talk-without-action markets (all seeds)"
+  },
+  {
+    "id": "splice.D2.heldout",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.5101,
+      1.0
+    ],
+    "n": 4,
+    "text": "D2 flag rate on talk-without-action markets (heldout seeds)"
+  },
+  {
+    "id": "splice.D2.all",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2 flag rate on talk-without-action markets (all seeds)"
+  },
+  {
+    "id": "splice.D3.heldout",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "D3 flag rate on talk-without-action markets (heldout seeds)"
+  },
+  {
+    "id": "splice.D3.all",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D3 flag rate on talk-without-action markets (all seeds)"
+  },
+  {
+    "id": "splice.D4.heldout",
+    "value": 0.25,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0456,
+      0.6994
+    ],
+    "n": 4,
+    "text": "D4 flag rate on talk-without-action markets (heldout seeds)"
+  },
+  {
+    "id": "splice.D4.all",
+    "value": 0.25,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0715,
+      0.5907
+    ],
+    "n": 8,
+    "text": "D4 flag rate on talk-without-action markets (all seeds)"
+  },
+  {
+    "id": "x.auroc.D1.C2",
+    "value": 0.9531,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "exploratory: P(C1 market scores above a C2 market) for D1"
+  },
+  {
+    "id": "x.auroc.D1.decoys",
+    "value": 0.8802,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "exploratory: P(C1 market scores above a decoys market) for D1"
+  },
+  {
+    "id": "x.auroc.D3.C2",
+    "value": 0.2188,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "exploratory: P(C1 market scores above a C2 market) for D3"
+  },
+  {
+    "id": "x.auroc.D3.decoys",
+    "value": 0.4115,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "exploratory: P(C1 market scores above a decoys market) for D3"
+  },
+  {
+    "id": "x.tpr.X1.C1",
+    "value": 0.5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.15,
+      0.85
+    ],
+    "n": 4,
+    "text": "exploratory: X1 TPR on held-out C1"
+  },
+  {
+    "id": "x.fpr.X1.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.2425
+    ],
+    "n": 12,
+    "text": "exploratory: X1 decoy FPR"
+  },
+  {
+    "id": "x.flag.X1.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "exploratory: X1 flag rate on held-out C3"
+  },
+  {
+    "id": "x.flag.X1.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "exploratory: X1 flag rate on held-out C5"
+  },
+  {
+    "id": "x.flag.X1.C6",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.4899
+    ],
+    "n": 4,
+    "text": "exploratory: X1 flag rate on held-out C6"
+  },
+  {
+    "id": "x.splice.X1.all",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "exploratory: X1 on talk-without-action markets, all seeds"
+  },
+  {
+    "id": "x.dep_p.C2_C4",
+    "value": 0.1196,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "text": "exploratory: permutation p, dependence in C2 (one model) vs C4 (mixed)"
+  },
+  {
+    "id": "x.flag.D2.channel_all",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.862,
+      1.0
+    ],
+    "n": 24,
+    "text": "D2 flag rate on every C3, C5 and C6 market (all seeds)"
+  },
+  {
+    "id": "x.flag.D2.at_cost",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "ci": [
+      0.862,
+      1.0
+    ],
+    "n": 24,
+    "text": "D2 flag rate on channel markets whose collusion index stayed below 0.1"
+  },
+  {
+    "id": "x.n_at_cost",
+    "value": 24,
+    "abstract": false,
+    "source": {
+      "script": "analysis/detect.py"
+    },
+    "n": 24
+  }
+]

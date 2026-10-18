@@ -1,0 +1,5 @@
+{
+  "fig1.png": "Figure 1: Collusion index of every market (x: calibration seeds 0-3, o: held-out seeds 4-7). Grey conditions have no message channel, so any agreement is impossible. The dashed line is the D1 threshold frozen on calibration seeds.",
+  "fig2.png": "Figure 2: Share of held-out markets each detector flags, with Wilson 95% intervals. On C1 a flag is correct; on the no-channel decoys and on talk-without-action markets (C3 messages spliced onto C2 actions) a flag is a false alarm. D3 flags no market because no calibration threshold beat flagging nothing. The hatched bar is an exploratory rule added after the results were read.",
+  "fig3.png": "Figure 3: Seller asks per hour. Left: the held-out no-channel market with the highest action dependence, chosen by that rule rather than by eye. Right: the first held-out planted-agreement market. Dotted lines mark seller cost ($80) and buyer value ($100)."
+}

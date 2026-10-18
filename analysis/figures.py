@@ -73,29 +73,33 @@ def main():
     groups = [("C1 (planted)", lambda r: r["condition"] == "C1" and r["split"] == "heldout", rows),
               ("No-channel decoys", lambda r: r["condition"] in ("C2", "C4", "C7") and r["split"] == "heldout", rows),
               ("Talk without action", lambda s: s["split"] == "heldout", det["splice"])]
-    dets = ["D1", "D2", "D3", "D4"]
-    names = {"D1": "D1 price level", "D2": "D2 message judge", "D3": "D3 action dependence", "D4": "D4 plus-factor rule"}
-    colors = ["#95a5a6", "#3498db", "#e67e22", "#27ae60"]
+    dets = ["D1", "D2", "D3", "D4", "X1"]
+    names = {"D1": "D1 price level", "D2": "D2 message judge", "D3": "D3 action dependence",
+             "D4": "D4 plus-factor rule", "X1": "D1 and D2 (exploratory)"}
+    colors = ["#95a5a6", "#3498db", "#e67e22", "#27ae60", "#ffffff"]
     fig, ax = plt.subplots(figsize=(6.4, 2.8))
-    width = 0.2
+    width = 0.16
     for j, d in enumerate(dets):
         for g, (gname, pick, source) in enumerate(groups):
             sel = [r for r in source if pick(r)]
             k = sum(r["flags"][d] for r in sel)
             p, lo, hi = wilson(k, len(sel))
-            x = g + (j - 1.5) * width
-            ax.bar(x, p, width * 0.92, color=colors[j], label=names[d] if g == 0 else None)
+            x = g + (j - 2) * width
+            ax.bar(x, p, width * 0.92, color=colors[j], label=names[d] if g == 0 else None,
+                   edgecolor="#333" if d == "X1" else colors[j], hatch="///" if d == "X1" else None, lw=0.6)
             ax.errorbar(x, p, yerr=[[max(0.0, p - lo)], [max(0.0, hi - p)]], color="#333", lw=0.7, capsize=1.5)
     sizes = [len([r for r in source if pick(r)]) for _, pick, source in groups]
     ax.set_xticks(range(len(groups)), ["%s\n(n = %d)" % (g[0], n) for g, n in zip(groups, sizes)])
     ax.set_ylabel("share of markets flagged")
     ax.set_ylim(0, 1.05)
-    ax.legend(fontsize=7, frameon=False, ncol=4, loc="lower center", bbox_to_anchor=(0.5, 1.0))
+    ax.legend(fontsize=7, frameon=False, ncol=3, loc="lower center", bbox_to_anchor=(0.5, 1.0))
     fig.savefig(FIG / "fig2.png")
     plt.close(fig)
     captions["fig2.png"] = ("Figure 2: Share of held-out markets each detector flags, with Wilson 95% intervals. "
                             "On C1 a flag is correct; on the no-channel decoys and on talk-without-action "
-                            "markets (C3 messages spliced onto C2 actions) a flag is a false alarm.")
+                            "markets (C3 messages spliced onto C2 actions) a flag is a false alarm. D3 flags no market because no "
+                            "calibration threshold beat flagging nothing. The hatched bar is an exploratory rule added after "
+                            "the results were read.")
 
     # Figure 3: the most parallel held-out no-channel market next to a held-out planted market
     decoys = [r for r in rows if r["condition"] in ("C2", "C4", "C7") and r["split"] == "heldout" and r["scores"]["D3"] is not None]

@@ -146,7 +146,7 @@ def main():
     # ---- 5. hypothesis tests -----------------------------------------------------------------
     pvals = {}
     held_decoys = [r for c in DECOYS for r in by(c, "heldout")]
-    if held_decoys and t1 is not None and t3 is not None:
+    if held_decoys:   # an undefined threshold means the detector flags nothing; the test still runs
         n = len(held_decoys)
         p1 = M.binom_tail(sum(r["flags"]["D1"] for r in held_decoys), n, NOMINAL_FPR)
         p3 = M.binom_tail(sum(r["flags"]["D3"] for r in held_decoys), n, NOMINAL_FPR)
@@ -164,7 +164,7 @@ def main():
         add("h2.diff", round(mean, 4), ci=(round(lo, 4), round(hi, 4)), n=len(diffs),
             text="same-model minus cross-family pair dependence within C4 markets")
         pvals["h2"] = M.sign_flip_p(diffs)
-    if held_decoys and t1 is not None and t3 is not None and t4 is not None:
+    if held_decoys:
         f = lambda d: [r["flags"][d] for r in held_decoys]  # noqa: E731
         _, _, pa = M.mcnemar_exact(f("D1"), f("D4"))
         _, _, pb = M.mcnemar_exact(f("D3"), f("D4"))
@@ -199,6 +199,38 @@ def main():
             rows_ = [s for s in splice if split is None or s["split"] == split]
             rate("splice.%s.%s" % (det, split or "all"), rows_, det,
                  "%s flag rate on talk-without-action markets (%s seeds)" % (det, split or "all"))
+
+    # ---- 7. exploratory, NOT preregistered: added after the results were read -----------------
+    # (a) threshold-free separation of planted markets from no-channel decoys, all seeds;
+    # (b) X1 = D1 and D2 together (high prices plus judged coordination talk), using the frozen
+    #     D1 threshold and the fixed D2 cut, so no new parameter is tuned.
+    score = lambda cond, fn: [fn(all_markets[k]) for k in sorted(all_markets) if k[0] == cond]  # noqa: E731
+    decoy_scores = lambda fn: [v for c in DECOYS for v in score(c, fn)]  # noqa: E731
+    for name, fn in (("D1", M.d1), ("D3", M.d3)):
+        for label, neg in (("C2", score("C2", fn)), ("decoys", decoy_scores(fn))):
+            a = M.auroc(score("C1", fn), neg)
+            if a is not None:
+                add("x.auroc.%s.%s" % (name, label), round(a, 4),
+                    text="exploratory: P(C1 market scores above a %s market) for %s" % (label, name))
+    for r in rows:
+        r["flags"]["X1"] = r["flags"]["D1"] and r["flags"]["D2"]
+    for s_ in splice:
+        s_["flags"]["X1"] = s_["flags"]["D1"] and s_["flags"]["D2"]
+    rate("x.tpr.X1.C1", by("C1", "heldout"), "X1", "exploratory: X1 TPR on held-out C1")
+    rate("x.fpr.X1.decoys", [r for c in DECOYS for r in by(c, "heldout")], "X1", "exploratory: X1 decoy FPR")
+    for cond in ("C3", "C5", "C6"):
+        rate("x.flag.X1.%s" % cond, by(cond, "heldout"), "X1", "exploratory: X1 flag rate on held-out %s" % cond)
+    rate("x.splice.X1.all", splice, "X1", "exploratory: X1 on talk-without-action markets, all seeds")
+    d2_, d4_ = [M.d3(all_markets[k]) for k in sorted(all_markets) if k[0] == "C2"], \
+        [M.d3(all_markets[k]) for k in sorted(all_markets) if k[0] == "C4"]
+    add("x.dep_p.C2_C4", round(perm_test([v for v in d2_ if v is not None], [v for v in d4_ if v is not None], seed=0), 4),
+        text="exploratory: permutation p, dependence in C2 (one model) vs C4 (mixed)")
+    channel = [r for c in ("C3", "C5", "C6") for r in by(c)]
+    rate("x.flag.D2.channel_all", channel, "D2", "D2 flag rate on every C3, C5 and C6 market (all seeds)")
+    at_cost = [r for r in channel if r["scores"]["D1"] is not None and r["scores"]["D1"] < 0.1]
+    rate("x.flag.D2.at_cost", at_cost, "D2",
+         "D2 flag rate on channel markets whose collusion index stayed below 0.1")
+    add("x.n_at_cost", len(at_cost), n=len(channel))
 
     (OUT / "detectors.json").write_text(json.dumps(
         {"thresholds": thresholds, "missing": [list(k) for k in missing], "markets": rows,
