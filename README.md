@@ -7,8 +7,8 @@ Adesegun (Team discreet) to the Apart Research AI Collusion Research Sprint, 23â
 
 The market is the continuous double auction of Agrawal et al. (2025), arXiv:2507.01413, run
 unchanged: three LLM sellers (cost $80) against three scripted ZIP buyers (value $100) for 15
-hours. Seven conditions vary the seller message channel and the seller model mix; the no-channel
-conditions make agreement impossible by construction, so any collusion flag on them is a false
+hours. Seven conditions vary the seller message channel and the seller model mix. In the no-channel
+conditions agreement is impossible by construction, so any collusion flag on them is a false
 alarm. Four detectors are compared: price level (D1), an LLM message judge (D2), action
 dependence (D3) and a plus-factor rule (D4).
 
