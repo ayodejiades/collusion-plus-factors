@@ -1,6 +1,6 @@
 {
   "schema": "rops.claims/1",
-  "inputs_sha256": "06b572b214c9b0f7a48195ed11a054dd8ea252c809f22d7c1a500986ad03e652",
+  "inputs_sha256": "a6c9b9016e670e6a10d4b014f7d72dec953ac84c0adb3c791c574b95f3399183",
   "claims": [
     {
       "id": "cfg",
@@ -808,6 +808,219 @@
             4.0
           ],
           "n": 8
+        }
+      },
+      "agreement": {
+        "pct": {
+          "value": 0.875,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "kappa": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "recall": {
+          "value": 1.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 21
+        },
+        "fpr": {
+          "value": 1.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 3
+        }
+      }
+    },
+    {
+      "id": "labels",
+      "n": {
+        "value": 24,
+        "abstract": false,
+        "source": {
+          "script": "analysis/labels.py"
+        },
+        "text": "labelled markets; labeller: Claude, one pass, not blind to results"
+      },
+      "yes_rate": {
+        "value": 0.875,
+        "abstract": false,
+        "source": {
+          "script": "analysis/labels.py"
+        },
+        "ci": [
+          0.69,
+          0.9566
+        ],
+        "n": 24,
+        "C3": {
+          "value": 1.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "ci": [
+            0.6756,
+            1.0
+          ],
+          "n": 8
+        },
+        "C5": {
+          "value": 0.625,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "ci": [
+            0.3057,
+            0.8632
+          ],
+          "n": 8
+        },
+        "C6": {
+          "value": 1.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "ci": [
+            0.6756,
+            1.0
+          ],
+          "n": 8
+        }
+      },
+      "D1": {
+        "pct": {
+          "value": 0.125,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "kappa": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "recall": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 21
+        },
+        "fpr": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 3
+        }
+      },
+      "D3": {
+        "pct": {
+          "value": 0.125,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "kappa": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "recall": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 21
+        },
+        "fpr": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 3
+        }
+      },
+      "D4": {
+        "pct": {
+          "value": 0.1667,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "kappa": {
+          "value": 0.0123,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "recall": {
+          "value": 0.0476,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 21
+        },
+        "fpr": {
+          "value": 0.0,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 3
+        }
+      },
+      "D2x": {
+        "pct": {
+          "value": 0.25,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
+        },
+        "kappa": {
+          "value": -0.0435,
+          "abstract": false,
+          "source": {
+            "script": "analysis/labels.py"
+          },
+          "n": 24
         }
       }
     },

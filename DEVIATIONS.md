@@ -48,3 +48,11 @@ no market, which is what the rule implies. The first run of analysis/detect.py s
 in this case; the code now runs them with D3 flagging nothing. No threshold or test was changed.
 Every analysis marked "exploratory" in analysis/detect.py (section 7) was added after the results
 were read and is reported as exploratory.
+
+## D6: Labels by Claude instead of the author's two-pass hand labels (written 18 October 2026, after the results were read)
+The preregistration said the author would label C3, C5 and C6 markets twice, blind. At the
+owner's request (to finish everything before the sprint), Claude labelled the 24 markets in one
+pass, from the blind transcripts in labels/markets/ (labels/claude.csv), using the rubric fixed in
+analysis/labels.py before the results existed. Claude had seen the study's results, so the
+labels are not blind, and there is no second pass. analysis/labels.py uses the author's two
+passes instead whenever they are filled. The paper reports the labels as Claude's.

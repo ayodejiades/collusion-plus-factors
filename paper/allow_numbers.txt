@@ -6,3 +6,4 @@
 14 hourly ask changes in a 15-hour market
 5.5 model version in the name Claude Opus 5.5
 0.1 cut for prices at cost (collusion index below 0.1) in analysis/detect.py
+79.50 quoted seller message ("$79.50 or below")

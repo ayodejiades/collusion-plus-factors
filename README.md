@@ -23,8 +23,10 @@ dependence (D3) and a plus-factor rule (D4).
 | `analysis/` | `detect.py` (thresholds on calibration seeds, held-out scoring, H1–H4, talk without action), `labels.py` (blind two-pass hand labels), `figures.py` |
 | `runs/` | one folder per market: `result.json` and the full market log; `runs/calls.jsonl` is the ledger of every model call |
 | `results/` | `detectors.json`, `thresholds.json`, `positive_control.json`, `claims.json` (every number in the paper) |
-| `kaggle/` | the notebook that ran the grid on Kaggle (2×T4, Ollama) |
-| `paper/` | the report |
+| `kaggle/`, `study2/kaggle/` | Kaggle kernel settings. The notebooks themselves embed the market code, which is not redistributed; regenerate them with `rops-kaggle pack` |
+| `study2/` | Study 2: its preregistration (tag `prereg2-v1`), DEVIATIONS.md, config and runs |
+| `labels/` | blind transcripts and the agreement labels (`claude.csv`) |
+| `paper/` | the report (`DRAFT.md`, `DRAFT.docx`) |
 
 ## Reproduce
 

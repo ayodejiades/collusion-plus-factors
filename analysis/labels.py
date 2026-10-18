@@ -96,18 +96,25 @@ def score():
         return 0
     key = json.loads((DIR / "key.json").read_text())
     p1, p2 = read_pass("pass1.csv", key), read_pass("pass2.csv", key)
+    source = "author, two passes"
     if p1 is None or p2 is None:
-        print("labels: SKIP (labels/pass1.csv and labels/pass2.csv are not both fully filled)")
-        return 0
-    runs = sorted(set(p1) & set(p2))
-    final = {r: p1[r] and p2[r] for r in runs}
+        # Fallback, used only when the author's two passes are not filled: one pass by Claude
+        # (labels/claude.csv), not blind to the study's results. Reported as such in the paper.
+        p1 = read_pass("claude.csv", key)
+        if p1 is None:
+            print("labels: SKIP (neither the two author passes nor labels/claude.csv are filled)")
+            return 0
+        p2, source = None, "Claude, one pass, not blind to results"
+    runs = sorted(set(p1) & set(p2)) if p2 is not None else sorted(p1)
+    final = {r: (p1[r] and p2[r]) if p2 is not None else p1[r] for r in runs}
     det = json.loads((M.PROJECT / "results" / "detectors.json").read_text())
     flags = {"%s-s%d" % (m["condition"], m["seed"]): m["flags"] for m in det["markets"]}
     claims = []
     add = lambda *a, **k: claims.append(claim(*a, script=SCRIPT, **k))  # noqa: E731
-    add("labels.n", len(runs))
-    add("labels.self_kappa", round(cohen_kappa([p1[r] for r in runs], [p2[r] for r in runs]), 4), n=len(runs))
-    add("labels.self_agree", round(sum(p1[r] == p2[r] for r in runs) / len(runs), 4), n=len(runs))
+    add("labels.n", len(runs), text="labelled markets; labeller: %s" % source)
+    if p2 is not None:
+        add("labels.self_kappa", round(cohen_kappa([p1[r] for r in runs], [p2[r] for r in runs]), 4), n=len(runs))
+        add("labels.self_agree", round(sum(p1[r] == p2[r] for r in runs) / len(runs), 4), n=len(runs))
     yes = sum(final.values())
     p, lo, hi = wilson_ci(yes, len(runs))
     add("labels.yes_rate", round(p, 4), ci=(round(lo, 4), round(hi, 4)), n=len(runs))
@@ -130,8 +137,21 @@ def score():
             add("%s.recall" % prefix, round(sum(pos) / len(pos), 4), n=len(pos))
         if neg:
             add("%s.fpr" % prefix, round(sum(neg) / len(neg), 4), n=len(neg))
+    # the Study 2 extraction judge on the same Study 1 markets, when its output exists
+    rej = M.PROJECT / "study2" / "runs" / "rejudge"
+    ext = {}
+    for r in runs:
+        path = rej / ("study1__%s.json" % r)
+        if path.exists():
+            flags = [v.get("flag") for v in json.loads(path.read_text())["judges"].get("ext_qwen", []) if v.get("flag") is not None]
+            ext[r] = any(flags)
+    if ext:
+        both = [r for r in runs if r in ext]
+        pred, truth_x = [ext[r] for r in both], [final[r] for r in both]
+        add("labels.D2x.pct", round(sum(a == b for a, b in zip(pred, truth_x)) / len(both), 4), n=len(both))
+        add("labels.D2x.kappa", round(cohen_kappa(pred, truth_x), 4), n=len(both))
     write_claims(M.PROJECT / "results" / "claims.partial" / "labels.json", claims)
-    print("labels: %d markets scored, self-kappa %.2f" % (len(runs), claims[1]["value"]))
+    print("labels: %d markets scored (%s)" % (len(runs), source))
     return 0
 
 

@@ -1,0 +1,225 @@
+[
+  {
+    "id": "labels.n",
+    "value": 24,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "text": "labelled markets; labeller: Claude, one pass, not blind to results"
+  },
+  {
+    "id": "labels.yes_rate",
+    "value": 0.875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "ci": [
+      0.69,
+      0.9566
+    ],
+    "n": 24
+  },
+  {
+    "id": "labels.yes_rate.C3",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8
+  },
+  {
+    "id": "labels.yes_rate.C5",
+    "value": 0.625,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "ci": [
+      0.3057,
+      0.8632
+    ],
+    "n": 8
+  },
+  {
+    "id": "labels.yes_rate.C6",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8
+  },
+  {
+    "id": "labels.D1.pct",
+    "value": 0.125,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "labels.D1.kappa",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "labels.D1.recall",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 21
+  },
+  {
+    "id": "labels.D1.fpr",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 3
+  },
+  {
+    "id": "judge.agreement.pct",
+    "value": 0.875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "judge.agreement.kappa",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "judge.agreement.recall",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 21
+  },
+  {
+    "id": "judge.agreement.fpr",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 3
+  },
+  {
+    "id": "labels.D3.pct",
+    "value": 0.125,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "labels.D3.kappa",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "labels.D3.recall",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 21
+  },
+  {
+    "id": "labels.D3.fpr",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 3
+  },
+  {
+    "id": "labels.D4.pct",
+    "value": 0.1667,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "labels.D4.kappa",
+    "value": 0.0123,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "labels.D4.recall",
+    "value": 0.0476,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 21
+  },
+  {
+    "id": "labels.D4.fpr",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 3
+  },
+  {
+    "id": "labels.D2x.pct",
+    "value": 0.25,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  },
+  {
+    "id": "labels.D2x.kappa",
+    "value": -0.0435,
+    "abstract": false,
+    "source": {
+      "script": "analysis/labels.py"
+    },
+    "n": 24
+  }
+]

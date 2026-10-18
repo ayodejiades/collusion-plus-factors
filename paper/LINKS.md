@@ -1,4 +1,4 @@
 doc: <<FILL: Google Doc URL>>
-code: <<FILL: code URL>>
-prereg: prereg-v1
+code: https://github.com/ayodejiades/collusion-plus-factors
+prereg: https://github.com/ayodejiades/collusion-plus-factors/tree/prereg-v1
 video: 
