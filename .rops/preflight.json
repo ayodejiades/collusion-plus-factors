@@ -59,9 +59,9 @@
     {
       "id": 9,
       "name": "git clean",
-      "status": "PASS",
-      "detail": "no uncommitted changes",
-      "fix": ""
+      "status": "FAIL",
+      "detail": "uncommitted changes: paper/DRAFT.docx, paper/DRAFT.md, paper/paper.md",
+      "fix": "git -C . add -A && git -C . commit -m 'pre-submission'"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "id": 13,
       "name": "deadline",
       "status": "PASS",
-      "detail": "7d 21h 30m left · deadline Mon 26 Oct 12:59 Lagos · Sun 25 Oct 23:59 AoE",
+      "detail": "7d 21h 18m left · deadline Mon 26 Oct 12:59 Lagos · Sun 25 Oct 23:59 AoE",
       "fix": ""
     },
     {
@@ -113,7 +113,7 @@
       "fix": ""
     }
   ],
-  "pass": 13,
-  "fail": 0,
+  "pass": 12,
+  "fail": 1,
   "skip": 3
 }
