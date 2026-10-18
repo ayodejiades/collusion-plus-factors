@@ -52,9 +52,9 @@
     {
       "id": 8,
       "name": "pdf",
-      "status": "FAIL",
-      "detail": "9 pages; the sprint allows 4–8",
-      "fix": "fix the PDF: 9 pages; the sprint allows 4–8"
+      "status": "PASS",
+      "detail": "8 pages; title and links present in the PDF",
+      "fix": ""
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "id": 13,
       "name": "deadline",
       "status": "PASS",
-      "detail": "7d 21h 31m left · deadline Mon 26 Oct 12:59 Lagos · Sun 25 Oct 23:59 AoE",
+      "detail": "7d 21h 30m left · deadline Mon 26 Oct 12:59 Lagos · Sun 25 Oct 23:59 AoE",
       "fix": ""
     },
     {
@@ -113,7 +113,7 @@
       "fix": ""
     }
   ],
-  "pass": 12,
-  "fail": 1,
+  "pass": 13,
+  "fail": 0,
   "skip": 3
 }
