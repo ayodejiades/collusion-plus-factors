@@ -1,26 +1,19 @@
-# Sprint weekend plan (23–25 October 2026; deadline Mon 26 Oct 12:59 Lagos = Sun 23:59 AoE)
+# Plan: finish before the sprint, so the hackathon weekend is light
 
-Everything below is new work done during the sprint, which is what "What is new this weekend"
-in the paper reports. Nothing of Study 2 runs before kickoff.
+Deadline: Mon 26 Oct 12:59 Lagos (Sun 25 Oct 23:59 AoE). Both studies run before the sprint and
+the paper discloses it with dates ("What is new this weekend").
 
-| When (Lagos time) | What | Who | Time it takes you |
+| When (Lagos time) | What | Who | Your time |
 |---|---|---|---|
-| Fri 23 Oct, 19:00 | Study 2 launches on Kaggle (scheduled task; or run `make study2-push`) | automatic | 0 |
-| Fri evening | Hand labels, pass 1: fill `labels/pass1.csv` from `labels/markets/` | you | 45–60 min |
-| Sat 24 Oct, ~05:00–07:00 | Study 2 finishes (about 9–10 h on Kaggle) | automatic | 0 |
-| Sat morning | Tell Claude: "pull Study 2 and write it up". Claude runs `make study2-pull study2-analyze`, drafts the Study 2 results and updates the abstract, title and discussion | Claude | 5 min to ask |
-| Sat | Rewrite the paper in your own words, section by section, using `paper/FACTS.md` | you | 3–4 h |
-| Sun 25 Oct (24 h after pass 1) | Hand labels, pass 2: `labels/pass2.csv`, then `make analyze && rops-claims build .`; fill the Hand labels paragraph | you | 45–60 min |
-| Sun | Publish the repo (NEXT_STEPS.md step 3), fill the links, upload `paper/DRAFT.docx` to Google Docs, check the page count, `rops-preflight .` | you | 1 h |
-| Sun night | Submit on the sprint page | you | 15 min |
+| Sun 18 Oct, now | Study 2 runs on Kaggle (about 9–10 h; started 18 Oct) | automatic | 0 |
+| Sun 18 Oct, evening | Study 2 pulled and analysed; Study 2 results, abstract, title and discussion drafted | Claude | 0 |
+| Any day this week | Hand labels, pass 1: fill `labels/pass1.csv` from `labels/markets/` (rubric at the top of `analysis/labels.py`; do not open `labels/key.json`) | you | 45–60 min |
+| At least 24 h after pass 1 | Hand labels, pass 2: `labels/pass2.csv`; then tell Claude "labels done" (it runs `make analyze`, rebuilds claims and fills the Hand labels paragraph) | you | 45–60 min |
+| This week, in short sessions | Rewrite the paper in your own words, section by section, from `paper/FACTS.md` (Apart does not score reports that read as generated) | you | 3–4 h |
+| Before Fri 23 Oct | Publish the repo (NEXT_STEPS.md step 3), upload `paper/DRAFT.docx` to Google Docs, check the page count | you, with Claude | 1 h |
+| Sprint weekend | Final read, fill "What is new this weekend" with what you actually did, `rops-preflight .`, submit | you | 1 h |
 
-## If something goes wrong
-- **Study 2 stays "Queued" on Kaggle for more than 45 minutes:** `make study2-push-alt`
-  (a second kernel slug, which has started at once before). When one starts running, stop the
-  other in Kaggle's "View Active Events" panel so the grid runs once.
-- **`make study2-status` says ERROR:** download the log from the kernel's Logs tab and ask
-  Claude to fix it; the grid resumes where it stopped (finished markets are kept).
-- **`make study2-pull` fails with 429 Too Many Requests:** download `rops-output.tar.gz` from
-  the kernel's Output tab and run `rops-kaggle pull study2 --from ~/Downloads/rops-output.tar.gz`.
-- **Kaggle GPU quota:** Study 2 needs about 10 GPU hours; you had 22 left this week and the
-  quota resets weekly.
+## If something goes wrong with the Kaggle run
+- **ERROR status:** ask Claude to read the log and fix it; finished markets are kept and the grid resumes.
+- **Pull fails with 429 Too Many Requests:** download `rops-output.tar.gz` from the kernel's Output
+  tab and run `rops-kaggle pull study2 --from ~/Downloads/rops-output.tar.gz`.

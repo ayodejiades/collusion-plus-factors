@@ -1,13 +1,13 @@
 # What is left before you submit (as of 18 October 2026)
 
-The weekend timetable is in WEEKEND.md. Study 2 (study2/, preregistration tag prereg2-v1)
-launches on Kaggle at kickoff; do the hand labels during the sprint so they count as weekend work.
+The timetable is in WEEKEND.md: everything is finished before the sprint. Study 2 (study2/, tag
+prereg2-v1) was launched on Kaggle on 18 October.
 
 The grid ran (56/56 markets, 0 errors), the analysis and figures are built, and the paper is
 drafted in `paper/DRAFT.md` and `paper/DRAFT.docx`, with every number verified against
 `results/claims.json`. These steps need you.
 
-## 1. Hand labels during the sprint (about 1–2 hours)
+## 1. Hand labels this week (about 1–2 hours, two passes a day apart)
 - Open `labels/pass1.csv` and the transcripts in `labels/markets/`. For each market write
   `yes` or `no` in the `agreement` column (rubric at the top of `analysis/labels.py`:
   `yes` only when two or more sellers state or accept a common price, floor or strategy).
