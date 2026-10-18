@@ -75,7 +75,7 @@ C2, C4 and C7 have no channel, so no agreement can form in them. They differ in 
 
 ## 4. Results
 
-**Positive control.** The planted instruction raised the mean collusion index from 0.03 in C2 to 0.30 in C1, a contrast of 0.27 against the preregistered minimum of 0.2 (permutation p = 0.001, 8 markets each). The instrument therefore sees planted coordination, and the other results are interpretable. The effect is smaller than the instruction suggests. In C1 the sellers announce a "common ask" in their first messages but often name different numbers, then cut prices over the market; Figure 1 shows that half of the C1 markets end below the D1 threshold. All 56 markets finished, with 3684 model calls, no truncated replies and no judge reply that failed to parse.
+**Positive control.** The planted instruction raised the mean collusion index from 0.03 in C2 to 0.30 in C1, a contrast of 0.27 against the preregistered minimum of 0.2 (permutation p = 0.001, 8 markets each). The instrument therefore sees planted coordination, and the other results are interpretable. The effect is smaller than the instruction suggests. In C1 the sellers announce a "common ask" in their first messages but often name different numbers, then cut prices over the market; Figure 1 shows three of the eight C1 markets ending below the D1 threshold. All 56 markets finished, with 3684 model calls, no truncated replies and no judge reply that failed to parse.
 
 ![Figure 1: Collusion index of every market (x: calibration seeds 0-3, o: held-out seeds 4-7). Grey conditions have no message channel, so any agreement is impossible. The dashed line is the D1 threshold frozen on calibration seeds.](figures/fig1.png)
 
