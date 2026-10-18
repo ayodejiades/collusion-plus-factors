@@ -1,0 +1,84 @@
+{
+  "schema": "rops.runreport/1",
+  "conditions": {
+    "C1": {
+      "runs": 8,
+      "errors": 0,
+      "calls": 487,
+      "unpriced_calls": 0,
+      "prompt_tokens": 727483,
+      "completion_tokens": 146974,
+      "cost_usd": 0.0,
+      "truncation_rate": 0.0
+    },
+    "C2": {
+      "runs": 8,
+      "errors": 0,
+      "calls": 386,
+      "unpriced_calls": 0,
+      "prompt_tokens": 664208,
+      "completion_tokens": 110799,
+      "cost_usd": 0.0,
+      "truncation_rate": 0.0
+    },
+    "C3": {
+      "runs": 8,
+      "errors": 0,
+      "calls": 482,
+      "unpriced_calls": 0,
+      "prompt_tokens": 750884,
+      "completion_tokens": 141125,
+      "cost_usd": 0.0,
+      "truncation_rate": 0.0
+    },
+    "C4": {
+      "runs": 8,
+      "errors": 0,
+      "calls": 493,
+      "unpriced_calls": 0,
+      "prompt_tokens": 776501,
+      "completion_tokens": 136861,
+      "cost_usd": 0.0,
+      "truncation_rate": 0.0
+    },
+    "C5": {
+      "runs": 8,
+      "errors": 0,
+      "calls": 501,
+      "unpriced_calls": 0,
+      "prompt_tokens": 729957,
+      "completion_tokens": 142971,
+      "cost_usd": 0.0,
+      "truncation_rate": 0.0
+    },
+    "C7": {
+      "runs": 8,
+      "errors": 0,
+      "calls": 739,
+      "unpriced_calls": 0,
+      "prompt_tokens": 1005207,
+      "completion_tokens": 195138,
+      "cost_usd": 0.0,
+      "truncation_rate": 0.0
+    },
+    "C8": {
+      "runs": 8,
+      "errors": 0,
+      "calls": 484,
+      "unpriced_calls": 0,
+      "prompt_tokens": 714873,
+      "completion_tokens": 154660,
+      "cost_usd": 0.0,
+      "truncation_rate": 0.026859504132231406
+    }
+  },
+  "pilot": {
+    "calls": 0,
+    "cost_usd": 0
+  },
+  "total": {
+    "calls": 5479,
+    "cost_usd": 0.0,
+    "truncation_rate": 0.0023726957473991605
+  }
+}

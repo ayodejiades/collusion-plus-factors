@@ -248,9 +248,187 @@ Answer in your own words, typed or dictated. Write each answer under its questio
 
 ### C:x.n_at_cost [4. Results] What does x.n_at_cost = 24 mean for a market auditor?
 
+### C:s2.n_planned [4. Results] What does s2.n_planned = 56 mean for a market auditor?
+
+### C:s2.n_markets [4. Results] What does s2.n_markets = 56 mean for a market auditor?
+
+### C:s2.n_missing [4. Results] What does s2.n_missing = 0 mean for a market auditor?
+
+### C:s2.n_positives [4. Results] What does s2.n_positives = 16 mean for a market auditor?
+
+### C:s2.n_negatives [4. Results] What does s2.n_negatives = 32 mean for a market auditor?
+
+### C:s2.pc.threshold [4. Results] What does s2.pc.threshold = 0.3 mean for a market auditor?
+
+### C:s2.index.mean.C1 [4. Results] What does s2.index.mean.C1 = 0.3091 mean for a market auditor?
+
+### C:s2.index.mean.C2 [4. Results] What does s2.index.mean.C2 = 0.0066 mean for a market auditor?
+
+### C:s2.index.mean.C3 [4. Results] What does s2.index.mean.C3 = 0.0048 mean for a market auditor?
+
+### C:s2.index.mean.C4 [4. Results] What does s2.index.mean.C4 = 0.0085 mean for a market auditor?
+
+### C:s2.index.mean.C5 [4. Results] What does s2.index.mean.C5 = 0.0488 mean for a market auditor?
+
+### C:s2.index.mean.C7 [4. Results] What does s2.index.mean.C7 = 0.0724 mean for a market auditor?
+
+### C:s2.index.mean.C8 [4. Results] What does s2.index.mean.C8 = 0.7489 mean for a market auditor?
+
+### C:s2.pc.contrast [4. Results] What does s2.pc.contrast = 0.7422 mean for a market auditor?
+
+### C:s2.pc.p [4. Results] What does s2.pc.p = 0.0002 mean for a market auditor?
+
+### C:s2.pc1.contrast [4. Results] What does s2.pc1.contrast = 0.3025 mean for a market auditor?
+
+### C:s2.pc1.p [4. Results] What does s2.pc1.p = 0.0006 mean for a market auditor?
+
+### C:s2.tpr.D1 [4. Results] What does s2.tpr.D1 = 0.6875 (D1 true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.D1 [4. Results] What does s2.fpr.D1 = 0.0 (D1 false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.D1 [4. Results] What does s2.errors.D1 = 5 mean for a market auditor?
+
+### C:s2.flag.D1.C3 [4. Results] What does s2.flag.D1.C3 = 0.0 (D1 flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D1.C5 [4. Results] What does s2.flag.D1.C5 = 0.0 (D1 flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.tpr.D2 [4. Results] What does s2.tpr.D2 = 1.0 (D2 true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.D2 [4. Results] What does s2.fpr.D2 = 0.25 (D2 false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.D2 [4. Results] What does s2.errors.D2 = 8 mean for a market auditor?
+
+### C:s2.flag.D2.C3 [4. Results] What does s2.flag.D2.C3 = 1.0 (D2 flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D2.C5 [4. Results] What does s2.flag.D2.C5 = 1.0 (D2 flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.tpr.D2x [4. Results] What does s2.tpr.D2x = 0.9375 (D2x true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.D2x [4. Results] What does s2.fpr.D2x = 0.0938 (D2x false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.D2x [4. Results] What does s2.errors.D2x = 4 mean for a market auditor?
+
+### C:s2.flag.D2x.C3 [4. Results] What does s2.flag.D2x.C3 = 0.375 (D2x flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D2x.C5 [4. Results] What does s2.flag.D2x.C5 = 0.625 (D2x flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.tpr.D2xL [4. Results] What does s2.tpr.D2xL = 1.0 (D2xL true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.D2xL [4. Results] What does s2.fpr.D2xL = 0.125 (D2xL false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.D2xL [4. Results] What does s2.errors.D2xL = 4 mean for a market auditor?
+
+### C:s2.flag.D2xL.C3 [4. Results] What does s2.flag.D2xL.C3 = 0.5 (D2xL flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D2xL.C5 [4. Results] What does s2.flag.D2xL.C5 = 1.0 (D2xL flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.tpr.D3 [4. Results] What does s2.tpr.D3 = 0.0 (D3 true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.D3 [4. Results] What does s2.fpr.D3 = 0.0 (D3 false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.D3 [4. Results] What does s2.errors.D3 = 16 mean for a market auditor?
+
+### C:s2.flag.D3.C3 [4. Results] What does s2.flag.D3.C3 = 0.0 (D3 flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D3.C5 [4. Results] What does s2.flag.D3.C5 = 0.0 (D3 flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.tpr.D4 [4. Results] What does s2.tpr.D4 = 0.0 (D4 true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.D4 [4. Results] What does s2.fpr.D4 = 0.0625 (D4 false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.D4 [4. Results] What does s2.errors.D4 = 18 mean for a market auditor?
+
+### C:s2.flag.D4.C3 [4. Results] What does s2.flag.D4.C3 = 0.0 (D4 flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D4.C5 [4. Results] What does s2.flag.D4.C5 = 0.0 (D4 flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.tpr.X1 [4. Results] What does s2.tpr.X1 = 0.6875 (X1 true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.X1 [4. Results] What does s2.fpr.X1 = 0.0 (X1 false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.X1 [4. Results] What does s2.errors.X1 = 5 mean for a market auditor?
+
+### C:s2.flag.X1.C3 [4. Results] What does s2.flag.X1.C3 = 0.0 (X1 flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.X1.C5 [4. Results] What does s2.flag.X1.C5 = 0.0 (X1 flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.tpr.D5 [4. Results] What does s2.tpr.D5 = 0.6875 (D5 true-positive rate on C1 and C8) mean for a market auditor?
+
+### C:s2.fpr.D5 [4. Results] What does s2.fpr.D5 = 0.0 (D5 false-positive rate on decoys and talk-without-action) mean for a market auditor?
+
+### C:s2.errors.D5 [4. Results] What does s2.errors.D5 = 5 mean for a market auditor?
+
+### C:s2.flag.D5.C3 [4. Results] What does s2.flag.D5.C3 = 0.0 (D5 flag rate on C3 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D5.C5 [4. Results] What does s2.flag.D5.C5 = 0.0 (D5 flag rate on C5 (no ground truth)) mean for a market auditor?
+
+### C:s2.flag.D2.at_cost [4. Results] What does s2.flag.D2.at_cost = 1.0 (vendored judge on C3/C5 talk at cost) mean for a market auditor?
+
+### C:s2.flag.D2x.at_cost [4. Results] What does s2.flag.D2x.at_cost = 0.4667 (extraction judge on C3/C5 talk at cost) mean for a market auditor?
+
+### C:s2.judge_family.kappa [4. Results] What does s2.judge_family.kappa = 0.5349 mean for a market auditor?
+
+### C:s2.judge_family.agree [4. Results] What does s2.judge_family.agree = 0.8438 mean for a market auditor?
+
+### C:s2.dep.mean.C1 [4. Results] What does s2.dep.mean.C1 = 0.0846 mean for a market auditor?
+
+### C:s2.dep.mean.C2 [4. Results] What does s2.dep.mean.C2 = 0.2631 mean for a market auditor?
+
+### C:s2.dep.mean.C8 [4. Results] What does s2.dep.mean.C8 = -0.0514 mean for a market auditor?
+
+### C:s2.auroc.D3.C2 [4. Results] What does s2.auroc.D3.C2 = 0.3438 mean for a market auditor?
+
+### C:s2.h5.p [4. Results] What does s2.h5.p = 1.0 mean for a market auditor?
+
+### C:s2.h5.p_holm [4. Results] What does s2.h5.p_holm = 1.0 mean for a market auditor?
+
+### C:s2.h6.p [4. Results] What does s2.h6.p = 1.0 mean for a market auditor?
+
+### C:s2.h6.p_holm [4. Results] What does s2.h6.p_holm = 1.0 mean for a market auditor?
+
+### C:s2.h7.p [4. Results] What does s2.h7.p = 0.0078 mean for a market auditor?
+
+### C:s2.h7.p_holm [4. Results] What does s2.h7.p_holm = 0.0391 mean for a market auditor?
+
+### C:s2.h8.p [4. Results] What does s2.h8.p = 0.0625 mean for a market auditor?
+
+### C:s2.h8.p_holm [4. Results] What does s2.h8.p_holm = 0.25 mean for a market auditor?
+
+### C:s2.h9.p [4. Results] What does s2.h9.p = 0.2112 mean for a market auditor?
+
+### C:s2.h9.p_holm [4. Results] What does s2.h9.p_holm = 0.6335 mean for a market auditor?
+
+### C:s2.study1.D2x.C1 [4. Results] What does s2.study1.D2x.C1 = 0.875 (extraction judge flag rate on Study 1 C1 (secondary)) mean for a market auditor?
+
+### C:s2.study1.D2x.C3 [4. Results] What does s2.study1.D2x.C3 = 0.375 (extraction judge flag rate on Study 1 C3 (secondary)) mean for a market auditor?
+
+### C:s2.study1.D2x.C5 [4. Results] What does s2.study1.D2x.C5 = 0.25 (extraction judge flag rate on Study 1 C5 (secondary)) mean for a market auditor?
+
+### C:s2.study1.D2x.C6 [4. Results] What does s2.study1.D2x.C6 = 0.0 (extraction judge flag rate on Study 1 C6 (secondary)) mean for a market auditor?
+
+### C:s2.parse_failures [4. Results] What does s2.parse_failures = 63 mean for a market auditor?
+
+### C:s2.rejudge_misses [4. Results] What does s2.rejudge_misses = 1 mean for a market auditor?
+
 ### Q10 [5. Discussion and Limitations] What should a market auditor do differently because of these results?
 
 ### Q11 [5. Discussion and Limitations] What did the attack arm (C6, sellers told their messages are monitored by an overseer) show about how robust the result is?
+
+### L:A3 [5. Discussion and Limitations] Limitation: Does any comparison change more than one variable at once? What does your result not cover because of it?
+
+### L:A4 [5. Discussion and Limitations] Limitation: Could the headline be an artefact of a token cap, truncation, parser, prompt format or judge? What does your result not cover because of it?
+
+### L:A6 [5. Discussion and Limitations] Limitation: Do the prereg URL and code URL load, and does the code reproduce the headline numbers? What does your result not cover because of it?
+
+### L:A8 [5. Discussion and Limitations] Limitation: If an LLM judge scored anything, what is its agreement with hand labels? What does your result not cover because of it?
+
+### L:A13 [5. Discussion and Limitations] Limitation: Which three paragraphs read most like generated text, and did a human rewrite each one in their own words? What does your result not cover because of it?
+
+### L:N1 [5. Discussion and Limitations] Limitation: The positive control only just works, so maybe nothing could have been detected. What does your result not cover because of it?
+
+### L:N2 [5. Discussion and Limitations] Limitation: D3's failure might be a quirk of the correlation measure, not of parallel conduct. What does your result not cover because of it?
+
+### L:N3 [5. Discussion and Limitations] Limitation: The judge prompt counts proposals to cut prices as coordination, so D2's false alarms may say more about the prompt than about message-based detection. What does your result not cover because of it?
 
 ### Q12 [6. Conclusion] Your findings and what they mean, in one or two short paragraphs.
 

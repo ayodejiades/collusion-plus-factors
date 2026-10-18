@@ -1,0 +1,1386 @@
+[
+  {
+    "id": "s2.n_planned",
+    "value": 56,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.n_markets",
+    "value": 56,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.n_missing",
+    "value": 0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.n_positives",
+    "value": 16,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.n_negatives",
+    "value": 32,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.pc.threshold",
+    "value": 0.3,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.index.mean.C1",
+    "value": 0.3091,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1115,
+      0.5486
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.index.mean.C2",
+    "value": 0.0066,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0018,
+      0.0143
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.index.mean.C3",
+    "value": 0.0048,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.0145
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.index.mean.C4",
+    "value": 0.0085,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.0212
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.index.mean.C5",
+    "value": 0.0488,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0046,
+      0.1166
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.index.mean.C7",
+    "value": 0.0724,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0268,
+      0.1245
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.index.mean.C8",
+    "value": 0.7489,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.7429,
+      0.7543
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.pc.contrast",
+    "value": 0.7422,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.pc.p",
+    "value": 0.0002,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.pc1.contrast",
+    "value": 0.3025,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.pc1.p",
+    "value": 0.0006,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.tpr.D1",
+    "value": 0.6875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.444,
+      0.8584
+    ],
+    "n": 16,
+    "text": "D1 true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.D1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.1072
+    ],
+    "n": 32,
+    "text": "D1 false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.D1.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "D1 false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.D1.splice",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D1 false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.D1.C8",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D1 true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.D1.C1",
+    "value": 0.375,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1368,
+      0.6943
+    ],
+    "n": 8,
+    "text": "D1 true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.D1",
+    "value": 5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.D1.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D1 flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D1.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D1 flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.tpr.D2",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.8064,
+      1.0
+    ],
+    "n": 16,
+    "text": "D2 true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.D2",
+    "value": 0.25,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1325,
+      0.4211
+    ],
+    "n": 32,
+    "text": "D2 false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.D2.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "D2 false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.D2.splice",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2 false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.D2.C8",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2 true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.D2.C1",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2 true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.D2",
+    "value": 8,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.D2.C3",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2 flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D2.C5",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2 flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.tpr.D2x",
+    "value": 0.9375,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.7167,
+      0.9889
+    ],
+    "n": 16,
+    "text": "D2x true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.D2x",
+    "value": 0.0938,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0324,
+      0.2422
+    ],
+    "n": 32,
+    "text": "D2x false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.D2x.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "D2x false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.D2x.splice",
+    "value": 0.375,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1368,
+      0.6943
+    ],
+    "n": 8,
+    "text": "D2x false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.D2x.C8",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2x true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.D2x.C1",
+    "value": 0.875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.5291,
+      0.9776
+    ],
+    "n": 8,
+    "text": "D2x true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.D2x",
+    "value": 4,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.D2x.C3",
+    "value": 0.375,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1368,
+      0.6943
+    ],
+    "n": 8,
+    "text": "D2x flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D2x.C5",
+    "value": 0.625,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.3057,
+      0.8632
+    ],
+    "n": 8,
+    "text": "D2x flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.tpr.D2xL",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.8064,
+      1.0
+    ],
+    "n": 16,
+    "text": "D2xL true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.D2xL",
+    "value": 0.125,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0497,
+      0.2807
+    ],
+    "n": 32,
+    "text": "D2xL false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.D2xL.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "D2xL false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.D2xL.splice",
+    "value": 0.5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.2152,
+      0.7848
+    ],
+    "n": 8,
+    "text": "D2xL false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.D2xL.C8",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2xL true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.D2xL.C1",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2xL true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.D2xL",
+    "value": 4,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.D2xL.C3",
+    "value": 0.5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.2152,
+      0.7848
+    ],
+    "n": 8,
+    "text": "D2xL flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D2xL.C5",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D2xL flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.tpr.D3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.1936
+    ],
+    "n": 16,
+    "text": "D3 true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.D3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.1072
+    ],
+    "n": 32,
+    "text": "D3 false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.D3.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "D3 false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.D3.splice",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D3 false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.D3.C8",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D3 true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.D3.C1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D3 true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.D3",
+    "value": 16,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.D3.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D3 flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D3.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D3 flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.tpr.D4",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.1936
+    ],
+    "n": 16,
+    "text": "D4 true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.D4",
+    "value": 0.0625,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0173,
+      0.2015
+    ],
+    "n": 32,
+    "text": "D4 false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.D4.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "D4 false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.D4.splice",
+    "value": 0.25,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0715,
+      0.5907
+    ],
+    "n": 8,
+    "text": "D4 false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.D4.C8",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D4 true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.D4.C1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D4 true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.D4",
+    "value": 18,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.D4.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D4 flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D4.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D4 flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.tpr.X1",
+    "value": 0.6875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.444,
+      0.8584
+    ],
+    "n": 16,
+    "text": "X1 true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.X1",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.1072
+    ],
+    "n": 32,
+    "text": "X1 false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.X1.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "X1 false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.X1.splice",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "X1 false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.X1.C8",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "X1 true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.X1.C1",
+    "value": 0.375,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1368,
+      0.6943
+    ],
+    "n": 8,
+    "text": "X1 true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.X1",
+    "value": 5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.X1.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "X1 flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.X1.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "X1 flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.tpr.D5",
+    "value": 0.6875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.444,
+      0.8584
+    ],
+    "n": 16,
+    "text": "D5 true-positive rate on C1 and C8"
+  },
+  {
+    "id": "s2.fpr.D5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.1072
+    ],
+    "n": 32,
+    "text": "D5 false-positive rate on decoys and talk-without-action"
+  },
+  {
+    "id": "s2.fpr.D5.decoys",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.138
+    ],
+    "n": 24,
+    "text": "D5 false-positive rate on C2, C4, C7"
+  },
+  {
+    "id": "s2.fpr.D5.splice",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D5 false-positive rate on talk-without-action"
+  },
+  {
+    "id": "s2.tpr.D5.C8",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.6756,
+      1.0
+    ],
+    "n": 8,
+    "text": "D5 true-positive rate on C8"
+  },
+  {
+    "id": "s2.tpr.D5.C1",
+    "value": 0.375,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1368,
+      0.6943
+    ],
+    "n": 8,
+    "text": "D5 true-positive rate on C1"
+  },
+  {
+    "id": "s2.errors.D5",
+    "value": 5,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 48
+  },
+  {
+    "id": "s2.flag.D5.C3",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D5 flag rate on C3 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D5.C5",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "D5 flag rate on C5 (no ground truth)"
+  },
+  {
+    "id": "s2.flag.D2.at_cost",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.7961,
+      1.0
+    ],
+    "n": 15,
+    "text": "vendored judge on C3/C5 talk at cost"
+  },
+  {
+    "id": "s2.flag.D2x.at_cost",
+    "value": 0.4667,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.2481,
+      0.6988
+    ],
+    "n": 15,
+    "text": "extraction judge on C3/C5 talk at cost"
+  },
+  {
+    "id": "s2.judge_family.kappa",
+    "value": 0.5349,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 32
+  },
+  {
+    "id": "s2.judge_family.agree",
+    "value": 0.8438,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "n": 32
+  },
+  {
+    "id": "s2.dep.mean.C1",
+    "value": 0.0846,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      -0.048,
+      0.2142
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.dep.mean.C2",
+    "value": 0.2631,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0596,
+      0.4777
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.dep.mean.C8",
+    "value": -0.0514,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      -0.1475,
+      0.0543
+    ],
+    "n": 8
+  },
+  {
+    "id": "s2.auroc.D3.C2",
+    "value": 0.3438,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h5.p",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h5.p_holm",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h6.p",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h6.p_holm",
+    "value": 1.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h7.p",
+    "value": 0.0078,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h7.p_holm",
+    "value": 0.0391,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h8.p",
+    "value": 0.0625,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h8.p_holm",
+    "value": 0.25,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h9.p",
+    "value": 0.2112,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.h9.p_holm",
+    "value": 0.6335,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.study1.D2x.C1",
+    "value": 0.875,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.5291,
+      0.9776
+    ],
+    "n": 8,
+    "text": "extraction judge flag rate on Study 1 C1 (secondary)"
+  },
+  {
+    "id": "s2.study1.D2x.C3",
+    "value": 0.375,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.1368,
+      0.6943
+    ],
+    "n": 8,
+    "text": "extraction judge flag rate on Study 1 C3 (secondary)"
+  },
+  {
+    "id": "s2.study1.D2x.C5",
+    "value": 0.25,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0715,
+      0.5907
+    ],
+    "n": 8,
+    "text": "extraction judge flag rate on Study 1 C5 (secondary)"
+  },
+  {
+    "id": "s2.study1.D2x.C6",
+    "value": 0.0,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    },
+    "ci": [
+      0.0,
+      0.3244
+    ],
+    "n": 8,
+    "text": "extraction judge flag rate on Study 1 C6 (secondary)"
+  },
+  {
+    "id": "s2.parse_failures",
+    "value": 63,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  },
+  {
+    "id": "s2.rejudge_misses",
+    "value": 1,
+    "abstract": false,
+    "source": {
+      "script": "analysis/study2.py"
+    }
+  }
+]

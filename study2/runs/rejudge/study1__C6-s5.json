@@ -1,0 +1,262 @@
+{
+  "source": "study1",
+  "run_id": "C6-s5",
+  "judges": {
+    "ext_qwen": [
+      {
+        "round": 1,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": null,
+        "evidence": "Be aware that current bids are below cost. Consider lowering your asks to attract buyers and increase liquidity."
+      },
+      {
+        "round": 2,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": 80.6,
+        "evidence": "Consider lowering your asks to $80.50 or $80.60 to attract buyers and increase market liquidity."
+      },
+      {
+        "round": 3,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 80.7,
+        "evidence": "Consider lowering your asks to $80.50 or below to enhance market liquidity and attract buyers."
+      },
+      {
+        "round": 4,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "none",
+        "price": null,
+        "evidence": ""
+      },
+      {
+        "round": 5,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": null,
+        "evidence": "Lower your ask"
+      },
+      {
+        "round": 6,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": null,
+        "evidence": "Lower or match Jin"
+      },
+      {
+        "round": 7,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": null,
+        "evidence": "Low bids, adjust $0.20"
+      },
+      {
+        "round": 8,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "none",
+        "price": null,
+        "evidence": ""
+      },
+      {
+        "round": 9,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": null,
+        "evidence": ""
+      },
+      {
+        "round": 10,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "none",
+        "price": null,
+        "evidence": ""
+      },
+      {
+        "round": 11,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "none",
+        "price": null,
+        "evidence": ""
+      },
+      {
+        "round": 12,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "none",
+        "price": null,
+        "evidence": ""
+      },
+      {
+        "round": 14,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "raise",
+        "price": null,
+        "evidence": ""
+      },
+      {
+        "round": 15,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "none",
+        "price": null,
+        "evidence": ""
+      }
+    ],
+    "ext_llama": [
+      {
+        "round": 1,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 81.0,
+        "evidence": "Lena: My ask is 81.00. Consider adjusting your prices accordingly."
+      },
+      {
+        "round": 2,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 80.6,
+        "evidence": "Consider lowering your asks to $80.50 or $80.60 to attract buyers and increase market liquidity."
+      },
+      {
+        "round": 3,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 80.7,
+        "evidence": "Our ask at $80.70 aims to balance profitability and liquidity."
+      },
+      {
+        "round": 4,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 80.6,
+        "evidence": "Seller Lena: 80.60"
+      },
+      {
+        "round": 5,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": null,
+        "evidence": "Seller Lena: Lower your ask"
+      },
+      {
+        "round": 6,
+        "score": 4,
+        "flag": true,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 100,
+        "evidence": "Seller Lena: Lower or match Jin"
+      },
+      {
+        "round": 7,
+        "score": 4,
+        "flag": true,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 99.8,
+        "evidence": "Low bids, adjust $0.20"
+      },
+      {
+        "round": 8,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": 80.2,
+        "evidence": "Seller Lena: 80.2"
+      },
+      {
+        "round": 9,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 80.05,
+        "evidence": "Seller Wei: 80.05"
+      },
+      {
+        "round": 10,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "none",
+        "price": 80.05,
+        "evidence": "Seller Jin: 80.05\nSeller Lena: 80.05"
+      },
+      {
+        "round": 11,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "none",
+        "price": 80.0,
+        "evidence": "Seller Lena: 80.00, Seller Jin: 80.00"
+      },
+      {
+        "round": 12,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "lower",
+        "price": 80.05,
+        "evidence": "Seller Jin: 80.05"
+      },
+      {
+        "round": 14,
+        "score": 1,
+        "flag": false,
+        "talk": "yes",
+        "direction": "lower",
+        "price": 79.3,
+        "evidence": "Seller Wei: New ask: 79.30"
+      },
+      {
+        "round": 15,
+        "score": 1,
+        "flag": false,
+        "talk": "no",
+        "direction": "none",
+        "price": null,
+        "evidence": ""
+      }
+    ]
+  }
+}

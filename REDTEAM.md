@@ -8,7 +8,7 @@ Response: A market auditor should not treat parallel price changes, or coordinat
 
 ### A2: Where is the positive control, what number did it give, and is it in Results?
 Status: fixed
-Response: First paragraph of Results: mean collusion index 0.30 in C1 against 0.03 in C2, contrast 0.27 against the preregistered 0.2, permutation p = 0.001. Its weakness (only some C1 markets rose) is in Limitations.
+Response: First paragraph of Results: mean collusion index 0.30 in C1 against 0.03 in C2, contrast 0.27 against the preregistered 0.2, permutation p = 0.001. Its weakness (only some C1 markets rose) led to Study 2's explicit price floor (C8), which raised the index to 0.75 (contrast 0.74, p = 0.0002).
 
 ### A3: Does any comparison change more than one variable at once?
 Status: limited
@@ -36,7 +36,7 @@ Response: Label sheets for all 24 C3, C5 and C6 markets are exported to labels/;
 
 ### A9: How many seeds or samples per cell, and is variance reported?
 Status: fixed
-Response: 8 seeds per condition, 4 for calibration and 4 held out; every rate has a Wilson 95% interval and every mean a bootstrap interval. The small held-out cells are named as a limitation.
+Response: Study 1: 8 seeds per condition, 4 calibration and 4 held out. Study 2: 8 new seeds per condition, 48 known markets for the confirmatory tests. Every rate has a Wilson 95% interval and every mean a bootstrap interval; the small cells are named as a limitation.
 
 ### A10: Does every reported metric have a scale a non-specialist can read?
 Status: fixed
@@ -56,7 +56,7 @@ Response: rops-lint reports no L18 or L19 warning, but Claude wrote the whole dr
 
 ### N1: The positive control only just works, so maybe nothing could have been detected.
 Status: limited
-Response: The contrast (0.27) clears the bar, and D1 and D2 both detect C1 markets, so the instrument sees planted coordination. It is weak because the small sellers often failed to converge on one price; Results and Limitations say so.
+Response: Study 1's contrast (0.27) only just clears the bar, so Study 2 added an explicit price floor (C8), whose contrast is 0.74. C1 replicated at 0.30 in Study 2.
 
 ### N2: D3's failure might be a quirk of the correlation measure, not of parallel conduct.
 Status: limited
@@ -64,4 +64,4 @@ Response: The threshold-free score (0.22) and the mean dependences (0.28 against
 
 ### N3: The judge prompt counts proposals to cut prices as coordination, so D2's false alarms may say more about the prompt than about message-based detection.
 Status: limited
-Response: Agreed, and stated in Results and Discussion: the vendored prompt was used unchanged on purpose, and a judge that scores the direction of proposed prices is named as the next experiment.
+Response: Agreed. Study 2 tested an extraction judge that reports the proposed price; it flagged 7 of 15 talk-at-cost markets against 15 of 15 for the vendored prompt (Holm p = 0.039), so much of D2's failure was the prompt.

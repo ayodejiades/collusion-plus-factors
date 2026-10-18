@@ -182,6 +182,87 @@ Must state:
 - x.flag.D2.channel_all = 1.0 (D2 flag rate on every C3, C5 and C6 market (all seeds)) [claim:x.flag.D2.channel_all]
 - x.flag.D2.at_cost = 1.0 (D2 flag rate on channel markets whose collusion index stayed below 0.1) [claim:x.flag.D2.at_cost]
 - x.n_at_cost = 24 [claim:x.n_at_cost]
+- s2.n_planned = 56 [claim:s2.n_planned]
+- s2.n_markets = 56 [claim:s2.n_markets]
+- s2.n_missing = 0 [claim:s2.n_missing]
+- s2.n_positives = 16 [claim:s2.n_positives]
+- s2.n_negatives = 32 [claim:s2.n_negatives]
+- s2.pc.threshold = 0.3 [claim:s2.pc.threshold]
+- s2.index.mean.C1 = 0.3091 [claim:s2.index.mean.C1]
+- s2.index.mean.C2 = 0.0066 [claim:s2.index.mean.C2]
+- s2.index.mean.C3 = 0.0048 [claim:s2.index.mean.C3]
+- s2.index.mean.C4 = 0.0085 [claim:s2.index.mean.C4]
+- s2.index.mean.C5 = 0.0488 [claim:s2.index.mean.C5]
+- s2.index.mean.C7 = 0.0724 [claim:s2.index.mean.C7]
+- s2.index.mean.C8 = 0.7489 [claim:s2.index.mean.C8]
+- s2.pc.contrast = 0.7422 [claim:s2.pc.contrast]
+- s2.pc.p = 0.0002 [claim:s2.pc.p]
+- s2.pc1.contrast = 0.3025 [claim:s2.pc1.contrast]
+- s2.pc1.p = 0.0006 [claim:s2.pc1.p]
+- s2.tpr.D1 = 0.6875 (D1 true-positive rate on C1 and C8) [claim:s2.tpr.D1]
+- s2.fpr.D1 = 0.0 (D1 false-positive rate on decoys and talk-without-action) [claim:s2.fpr.D1]
+- s2.errors.D1 = 5 [claim:s2.errors.D1]
+- s2.flag.D1.C3 = 0.0 (D1 flag rate on C3 (no ground truth)) [claim:s2.flag.D1.C3]
+- s2.flag.D1.C5 = 0.0 (D1 flag rate on C5 (no ground truth)) [claim:s2.flag.D1.C5]
+- s2.tpr.D2 = 1.0 (D2 true-positive rate on C1 and C8) [claim:s2.tpr.D2]
+- s2.fpr.D2 = 0.25 (D2 false-positive rate on decoys and talk-without-action) [claim:s2.fpr.D2]
+- s2.errors.D2 = 8 [claim:s2.errors.D2]
+- s2.flag.D2.C3 = 1.0 (D2 flag rate on C3 (no ground truth)) [claim:s2.flag.D2.C3]
+- s2.flag.D2.C5 = 1.0 (D2 flag rate on C5 (no ground truth)) [claim:s2.flag.D2.C5]
+- s2.tpr.D2x = 0.9375 (D2x true-positive rate on C1 and C8) [claim:s2.tpr.D2x]
+- s2.fpr.D2x = 0.0938 (D2x false-positive rate on decoys and talk-without-action) [claim:s2.fpr.D2x]
+- s2.errors.D2x = 4 [claim:s2.errors.D2x]
+- s2.flag.D2x.C3 = 0.375 (D2x flag rate on C3 (no ground truth)) [claim:s2.flag.D2x.C3]
+- s2.flag.D2x.C5 = 0.625 (D2x flag rate on C5 (no ground truth)) [claim:s2.flag.D2x.C5]
+- s2.tpr.D2xL = 1.0 (D2xL true-positive rate on C1 and C8) [claim:s2.tpr.D2xL]
+- s2.fpr.D2xL = 0.125 (D2xL false-positive rate on decoys and talk-without-action) [claim:s2.fpr.D2xL]
+- s2.errors.D2xL = 4 [claim:s2.errors.D2xL]
+- s2.flag.D2xL.C3 = 0.5 (D2xL flag rate on C3 (no ground truth)) [claim:s2.flag.D2xL.C3]
+- s2.flag.D2xL.C5 = 1.0 (D2xL flag rate on C5 (no ground truth)) [claim:s2.flag.D2xL.C5]
+- s2.tpr.D3 = 0.0 (D3 true-positive rate on C1 and C8) [claim:s2.tpr.D3]
+- s2.fpr.D3 = 0.0 (D3 false-positive rate on decoys and talk-without-action) [claim:s2.fpr.D3]
+- s2.errors.D3 = 16 [claim:s2.errors.D3]
+- s2.flag.D3.C3 = 0.0 (D3 flag rate on C3 (no ground truth)) [claim:s2.flag.D3.C3]
+- s2.flag.D3.C5 = 0.0 (D3 flag rate on C5 (no ground truth)) [claim:s2.flag.D3.C5]
+- s2.tpr.D4 = 0.0 (D4 true-positive rate on C1 and C8) [claim:s2.tpr.D4]
+- s2.fpr.D4 = 0.0625 (D4 false-positive rate on decoys and talk-without-action) [claim:s2.fpr.D4]
+- s2.errors.D4 = 18 [claim:s2.errors.D4]
+- s2.flag.D4.C3 = 0.0 (D4 flag rate on C3 (no ground truth)) [claim:s2.flag.D4.C3]
+- s2.flag.D4.C5 = 0.0 (D4 flag rate on C5 (no ground truth)) [claim:s2.flag.D4.C5]
+- s2.tpr.X1 = 0.6875 (X1 true-positive rate on C1 and C8) [claim:s2.tpr.X1]
+- s2.fpr.X1 = 0.0 (X1 false-positive rate on decoys and talk-without-action) [claim:s2.fpr.X1]
+- s2.errors.X1 = 5 [claim:s2.errors.X1]
+- s2.flag.X1.C3 = 0.0 (X1 flag rate on C3 (no ground truth)) [claim:s2.flag.X1.C3]
+- s2.flag.X1.C5 = 0.0 (X1 flag rate on C5 (no ground truth)) [claim:s2.flag.X1.C5]
+- s2.tpr.D5 = 0.6875 (D5 true-positive rate on C1 and C8) [claim:s2.tpr.D5]
+- s2.fpr.D5 = 0.0 (D5 false-positive rate on decoys and talk-without-action) [claim:s2.fpr.D5]
+- s2.errors.D5 = 5 [claim:s2.errors.D5]
+- s2.flag.D5.C3 = 0.0 (D5 flag rate on C3 (no ground truth)) [claim:s2.flag.D5.C3]
+- s2.flag.D5.C5 = 0.0 (D5 flag rate on C5 (no ground truth)) [claim:s2.flag.D5.C5]
+- s2.flag.D2.at_cost = 1.0 (vendored judge on C3/C5 talk at cost) [claim:s2.flag.D2.at_cost]
+- s2.flag.D2x.at_cost = 0.4667 (extraction judge on C3/C5 talk at cost) [claim:s2.flag.D2x.at_cost]
+- s2.judge_family.kappa = 0.5349 [claim:s2.judge_family.kappa]
+- s2.judge_family.agree = 0.8438 [claim:s2.judge_family.agree]
+- s2.dep.mean.C1 = 0.0846 [claim:s2.dep.mean.C1]
+- s2.dep.mean.C2 = 0.2631 [claim:s2.dep.mean.C2]
+- s2.dep.mean.C8 = -0.0514 [claim:s2.dep.mean.C8]
+- s2.auroc.D3.C2 = 0.3438 [claim:s2.auroc.D3.C2]
+- s2.h5.p = 1.0 [claim:s2.h5.p]
+- s2.h5.p_holm = 1.0 [claim:s2.h5.p_holm]
+- s2.h6.p = 1.0 [claim:s2.h6.p]
+- s2.h6.p_holm = 1.0 [claim:s2.h6.p_holm]
+- s2.h7.p = 0.0078 [claim:s2.h7.p]
+- s2.h7.p_holm = 0.0391 [claim:s2.h7.p_holm]
+- s2.h8.p = 0.0625 [claim:s2.h8.p]
+- s2.h8.p_holm = 0.25 [claim:s2.h8.p_holm]
+- s2.h9.p = 0.2112 [claim:s2.h9.p]
+- s2.h9.p_holm = 0.6335 [claim:s2.h9.p_holm]
+- s2.study1.D2x.C1 = 0.875 (extraction judge flag rate on Study 1 C1 (secondary)) [claim:s2.study1.D2x.C1]
+- s2.study1.D2x.C3 = 0.375 (extraction judge flag rate on Study 1 C3 (secondary)) [claim:s2.study1.D2x.C3]
+- s2.study1.D2x.C5 = 0.25 (extraction judge flag rate on Study 1 C5 (secondary)) [claim:s2.study1.D2x.C5]
+- s2.study1.D2x.C6 = 0.0 (extraction judge flag rate on Study 1 C6 (secondary)) [claim:s2.study1.D2x.C6]
+- s2.parse_failures = 63 [claim:s2.parse_failures]
+- s2.rejudge_misses = 1 [claim:s2.rejudge_misses]
 
 Tables:
 
@@ -298,6 +379,87 @@ Table 2: Main results (95% bootstrap intervals where shown).
 | D2 flag rate on every C3, C5 and C6 market (all seeds) | 1 | 0.86–1 | 24 |
 | D2 flag rate on channel markets whose collusion index stayed below 0.1 | 1 | 0.86–1 | 24 |
 | x.n_at_cost | 24 | — | 24 |
+| s2.n_planned | 56 | — | — |
+| s2.n_markets | 56 | — | — |
+| s2.n_missing | 0 | — | — |
+| s2.n_positives | 16 | — | — |
+| s2.n_negatives | 32 | — | — |
+| s2.pc.threshold | 0.30 | — | — |
+| s2.index.mean.C1 | 0.31 | 0.11–0.55 | 8 |
+| s2.index.mean.C2 | 0.0066 | 0.0018–0.01 | 8 |
+| s2.index.mean.C3 | 0.0048 | 0–0.01 | 8 |
+| s2.index.mean.C4 | 0.0085 | 0–0.02 | 8 |
+| s2.index.mean.C5 | 0.05 | 0.0046–0.12 | 8 |
+| s2.index.mean.C7 | 0.07 | 0.03–0.12 | 8 |
+| s2.index.mean.C8 | 0.75 | 0.74–0.75 | 8 |
+| s2.pc.contrast | 0.74 | — | — |
+| s2.pc.p | 0.00020 | — | — |
+| s2.pc1.contrast | 0.30 | — | — |
+| s2.pc1.p | 0.00060 | — | — |
+| D1 true-positive rate on C1 and C8 | 0.69 | 0.44–0.86 | 16 |
+| D1 false-positive rate on decoys and talk-without-action | 0 | 0–0.11 | 32 |
+| s2.errors.D1 | 5 | — | 48 |
+| D1 flag rate on C3 (no ground truth) | 0 | 0–0.32 | 8 |
+| D1 flag rate on C5 (no ground truth) | 0 | 0–0.32 | 8 |
+| D2 true-positive rate on C1 and C8 | 1 | 0.81–1 | 16 |
+| D2 false-positive rate on decoys and talk-without-action | 0.25 | 0.13–0.42 | 32 |
+| s2.errors.D2 | 8 | — | 48 |
+| D2 flag rate on C3 (no ground truth) | 1 | 0.68–1 | 8 |
+| D2 flag rate on C5 (no ground truth) | 1 | 0.68–1 | 8 |
+| D2x true-positive rate on C1 and C8 | 0.94 | 0.72–0.99 | 16 |
+| D2x false-positive rate on decoys and talk-without-action | 0.09 | 0.03–0.24 | 32 |
+| s2.errors.D2x | 4 | — | 48 |
+| D2x flag rate on C3 (no ground truth) | 0.38 | 0.14–0.69 | 8 |
+| D2x flag rate on C5 (no ground truth) | 0.62 | 0.31–0.86 | 8 |
+| D2xL true-positive rate on C1 and C8 | 1 | 0.81–1 | 16 |
+| D2xL false-positive rate on decoys and talk-without-action | 0.12 | 0.05–0.28 | 32 |
+| s2.errors.D2xL | 4 | — | 48 |
+| D2xL flag rate on C3 (no ground truth) | 0.50 | 0.22–0.78 | 8 |
+| D2xL flag rate on C5 (no ground truth) | 1 | 0.68–1 | 8 |
+| D3 true-positive rate on C1 and C8 | 0 | 0–0.19 | 16 |
+| D3 false-positive rate on decoys and talk-without-action | 0 | 0–0.11 | 32 |
+| s2.errors.D3 | 16 | — | 48 |
+| D3 flag rate on C3 (no ground truth) | 0 | 0–0.32 | 8 |
+| D3 flag rate on C5 (no ground truth) | 0 | 0–0.32 | 8 |
+| D4 true-positive rate on C1 and C8 | 0 | 0–0.19 | 16 |
+| D4 false-positive rate on decoys and talk-without-action | 0.06 | 0.02–0.20 | 32 |
+| s2.errors.D4 | 18 | — | 48 |
+| D4 flag rate on C3 (no ground truth) | 0 | 0–0.32 | 8 |
+| D4 flag rate on C5 (no ground truth) | 0 | 0–0.32 | 8 |
+| X1 true-positive rate on C1 and C8 | 0.69 | 0.44–0.86 | 16 |
+| X1 false-positive rate on decoys and talk-without-action | 0 | 0–0.11 | 32 |
+| s2.errors.X1 | 5 | — | 48 |
+| X1 flag rate on C3 (no ground truth) | 0 | 0–0.32 | 8 |
+| X1 flag rate on C5 (no ground truth) | 0 | 0–0.32 | 8 |
+| D5 true-positive rate on C1 and C8 | 0.69 | 0.44–0.86 | 16 |
+| D5 false-positive rate on decoys and talk-without-action | 0 | 0–0.11 | 32 |
+| s2.errors.D5 | 5 | — | 48 |
+| D5 flag rate on C3 (no ground truth) | 0 | 0–0.32 | 8 |
+| D5 flag rate on C5 (no ground truth) | 0 | 0–0.32 | 8 |
+| vendored judge on C3/C5 talk at cost | 1 | 0.80–1 | 15 |
+| extraction judge on C3/C5 talk at cost | 0.47 | 0.25–0.70 | 15 |
+| s2.judge_family.kappa | 0.53 | — | 32 |
+| s2.judge_family.agree | 0.84 | — | 32 |
+| s2.dep.mean.C1 | 0.08 | -0.05–0.21 | 8 |
+| s2.dep.mean.C2 | 0.26 | 0.06–0.48 | 8 |
+| s2.dep.mean.C8 | -0.05 | -0.15–0.05 | 8 |
+| s2.auroc.D3.C2 | 0.34 | — | — |
+| s2.h5.p | 1 | — | — |
+| s2.h5.p_holm | 1 | — | — |
+| s2.h6.p | 1 | — | — |
+| s2.h6.p_holm | 1 | — | — |
+| s2.h7.p | 0.0078 | — | — |
+| s2.h7.p_holm | 0.04 | — | — |
+| s2.h8.p | 0.06 | — | — |
+| s2.h8.p_holm | 0.25 | — | — |
+| s2.h9.p | 0.21 | — | — |
+| s2.h9.p_holm | 0.63 | — | — |
+| extraction judge flag rate on Study 1 C1 (secondary) | 0.88 | 0.53–0.98 | 8 |
+| extraction judge flag rate on Study 1 C3 (secondary) | 0.38 | 0.14–0.69 | 8 |
+| extraction judge flag rate on Study 1 C5 (secondary) | 0.25 | 0.07–0.59 | 8 |
+| extraction judge flag rate on Study 1 C6 (secondary) | 0 | 0–0.32 | 8 |
+| s2.parse_failures | 63 | — | — |
+| s2.rejudge_misses | 1 | — | — |
 
 Table 3: Runs per condition.
 
@@ -323,6 +485,14 @@ Must state:
 
 - The decision: whether parallel pricing alone justifies a collusion finding, or plus-factor evidence is required.
 - The attack arm: C6, sellers told their messages are monitored by an overseer.
+- [redteam:A3] Does any comparison change more than one variable at once?
+- [redteam:A4] Could the headline be an artefact of a token cap, truncation, parser, prompt format or judge?
+- [redteam:A6] Do the prereg URL and code URL load, and does the code reproduce the headline numbers?
+- [redteam:A8] If an LLM judge scored anything, what is its agreement with hand labels?
+- [redteam:A13] Which three paragraphs read most like generated text, and did a human rewrite each one in their own words?
+- [redteam:N1] The positive control only just works, so maybe nothing could have been detected.
+- [redteam:N2] D3's failure might be a quirk of the correlation measure, not of parallel conduct.
+- [redteam:N3] The judge prompt counts proposals to cut prices as coordination, so D2's false alarms may say more about the prompt than about message-based detection.
 
 Word budget: about 0.5 page.
 

@@ -2,7 +2,7 @@
 
 Write each section from these bullets, in your own sentences, without looking at DRAFT.md. Every
 number here is in results/claims.json; `rops-claims verify . --paper paper/paper.md` checks
-yours. Study 2 bullets are added after the weekend run.
+yours. Study 2 ran on 18 October (study2/DEVIATIONS.md D1).
 
 ## Title
 - Must contain a finding verb. Current: "No Single Signal Separates Agreement From Parallel
@@ -14,7 +14,10 @@ yours. Study 2 bullets are added after the weekend run.
 - Design: Agrawal et al. double auction; no-channel markets are decoys (agreement impossible).
 - Positive control: planted coordination index 0.30 vs 0.03 (0 = cost, 1 = buyer value).
 - Findings: no single detector works (D3 inverted, D2 flags all 24 talk-at-cost markets, D1 2 of
-  12 decoys); preregistered D4 caught nothing; plus the Study 2 result.
+  12 decoys); preregistered D4 caught nothing.
+- Study 2: price floor 0.75; extraction judge cuts talk-at-cost false alarms 15 of 15 -> 7 of 15
+  (Holm p = 0.04); high price + price-holding talk: 0 false alarms on 32 negatives, misses failed
+  agreements.
 
 ## 1. Introduction
 - Problem: firms using the same model may price in parallel without agreement; Xu et al. [5]
@@ -83,3 +86,25 @@ yours. Study 2 bullets are added after the weekend run.
 - "does not establish" sentence is required (lint L13).
 - Dual use: detector rules describe how to evade them; risks small; no evasion technique released.
 - LLM Usage Statement: say plainly that Claude drafted text and code, and what you did.
+
+## 4. Results (Study 2, confirmatory; tag prereg2-v1; seeds 8-15; thresholds from Study 1)
+- Positive controls: C8 (price floor $95) 0.75 vs C2 0.01, contrast 0.74 (bar 0.3), p = 0.0002;
+  C1 replicates, contrast 0.30, p = 0.0006. 56/56 markets; 63 seller parse failures.
+- Known set: 16 positives (C1, C8), 32 negatives (24 decoys, 8 talk-without-action). Table 3:
+  caught / false alarms / errors: D1 11/0/5, D2 16/8/8, D2x 15/3/4, D2x-L 16/4/4, D3 0/0/16,
+  D4 0/2/18, X1 11/0/5, D5 11/0/5.
+- H7 supported: on 15 C3/C5 markets at cost, D2 flagged 15, D2x 7 (p = 0.008, Holm 0.039).
+  D2x's 3 false alarms were all talk-without-action (high price proposed in words, no action).
+  Secondary on Study 1: D2x flagged 3 of 8 C3 and 0 of 8 C6 (vendored judge: all).
+- H5, H6 not supported: D5 and X1 had 0 false alarms (Wilson 0 to 0.11) but missed 5 C1
+  markets (agreed in words, prices fell); D1 alone also had 0 false alarms in Study 2 (C7 mean
+  0.07), so the rules tied with D1. vs D2: 8 false alarms traded for 5 misses (p = 1.00).
+- H8: Qwen and Llama extraction judges agree 0.84 (kappa 0.53), Holm p = 0.25.
+- H9: dependence C2 0.26 vs C1 0.08, p = 0.21 (direction replicates, not significant); D4 again 0.
+
+## 5. Discussion (both studies)
+- Fix 1: ask the judge for the proposed price, not for "coordination" (halves talk-at-cost false alarms).
+- Fix 2: require high price plus price-holding talk; no false alarms across both studies'
+  negatives; protects against high-price false alarms that appear in some markets (Study 1 Llama).
+- Cost: misses failed agreements; under US law a price-fixing agreement is unlawful even if it
+  fails [13] (Socony-Vacuum), so an auditor who must catch those still needs message evidence.

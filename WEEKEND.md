@@ -5,8 +5,7 @@ the paper discloses it with dates ("What is new this weekend").
 
 | When (Lagos time) | What | Who | Your time |
 |---|---|---|---|
-| Sun 18 Oct, now | Study 2 runs on Kaggle (about 9–10 h; started 18 Oct) | automatic | 0 |
-| Sun 18 Oct, evening | Study 2 pulled and analysed; Study 2 results, abstract, title and discussion drafted | Claude | 0 |
+| Sun 18 Oct | Study 2 ran on Kaggle (56/56 markets), was analysed, and is written into the paper | done | 0 |
 | Any day this week | Hand labels, pass 1: fill `labels/pass1.csv` from `labels/markets/` (rubric at the top of `analysis/labels.py`; do not open `labels/key.json`) | you | 45–60 min |
 | At least 24 h after pass 1 | Hand labels, pass 2: `labels/pass2.csv`; then tell Claude "labels done" (it runs `make analyze`, rebuilds claims and fills the Hand labels paragraph) | you | 45–60 min |
 | This week, in short sessions | Rewrite the paper in your own words, section by section, from `paper/FACTS.md` (Apart does not score reports that read as generated) | you | 3–4 h |
